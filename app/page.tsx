@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import { Accordion, Element } from '@/components/accordion'
-import { Button } from '@/components/button';
+import { Accordion } from "@/components/accordion";
+import { Button } from "@/components/button";
 
 export default function Home() {
   return (

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import localFont from 'next/font/local'
+import background from './background.png'
 import './globals.css'
 
 const kollektif = localFont({ src: './fonts/Kollektif.ttf' })
@@ -16,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={kollektif.className}>{children}</body>
+      <body className={kollektif.className}>
+        {children}
+      </body>
     </html>
   )
 }
