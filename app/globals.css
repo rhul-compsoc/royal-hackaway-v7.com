@@ -2,17 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text-black: #140f00;
+    --text-white: #FFFAEB;
+    --background: #fffaeb;
+    --primary: #e86a26;
+    --secondary: #fff5d6;
+    --accent: #cf4307;
+  }
+  .dark {
+    --text: #FFFAEB;
+    --background: #140f00;
+    --primary: #d95b17;
+    --secondary: #291f00;
+    --accent: #f86c30;
   }
 }
 
@@ -24,4 +28,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+};
