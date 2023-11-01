@@ -51,12 +51,12 @@ export default function Home() {
             {
               time: "17:00",
               title: "Dinner",
-              description: "Eat some food!"
+              description: "Eat some food! Probably just gonna be a tonne of pizza or something like that."
             },
             {
               time: "20:00",
               title: "Carrot in a Box",
-              description: "A long standing tradition!"
+              description: "A long standing tradition! Compete to become the highly respected Carrot in a Box champion."
             },
           ]}
         />
