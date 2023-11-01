@@ -23,7 +23,7 @@ export default function RootLayout({
           src={background}
           placeholder="blur"
           fill
-          className="object-cover" />
+          className="object-cover blur brightness-50" />
         {children}
       </body>
     </html>
