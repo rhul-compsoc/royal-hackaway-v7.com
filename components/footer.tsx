@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faXTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer = (): JSX.Element => {
   return (
@@ -70,6 +70,19 @@ export const Footer = (): JSX.Element => {
                   <span className="sr-only">GitHub</span>
 
                   <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/rhulcompsoc"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">Linkedin</span>
+
+                  <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
 

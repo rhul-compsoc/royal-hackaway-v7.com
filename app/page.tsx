@@ -4,6 +4,7 @@ import { Accordion } from "@/components/accordion";
 import { Button } from "@/components/button";
 import { Footer } from "@/components/footer";
 import { Link } from "@/components/link";
+import { Schedule } from "@/components/schedule";
 
 export default function Home() {
   return (
@@ -41,6 +42,23 @@ export default function Home() {
           text="Link me!"
           href="https://www.cmpsc.uk"
           target="_blank"
+        />
+      </div>
+
+      <div className="flex-col min-h-screen items-center justify-between p-96">
+        <Schedule
+          events={[
+            {
+              time: "17:00",
+              title: "Dinner",
+              description: "Eat some food!"
+            },
+            {
+              time: "20:00",
+              title: "Carrot in a Box",
+              description: "A long standing tradition!"
+            },
+          ]}
         />
       </div>
 
