@@ -14,7 +14,7 @@ export const Accordion: React.FC<Props> = ({ elements }): JSX.Element => {
         elements.map((element, index) => (
           <details key={index} className="group [&_summary::-webkit-details-marker]:hidden">
             <summary
-              className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-primary hover:bg-accent focus:bg-accent outline-none p-4 text-text-white"
+              className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-primary hover:bg-accent focus:bg-accent outline-none hover:opacity-75 p-4 text-text-white"
             >
               <h2 className="font-medium">{element.title}</h2>
               <svg
