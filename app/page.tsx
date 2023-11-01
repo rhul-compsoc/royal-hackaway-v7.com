@@ -2,6 +2,7 @@
 
 import { Accordion } from "@/components/accordion";
 import { Button } from "@/components/button";
+import { Link } from "@/components/link";
 
 export default function Home() {
   return (
@@ -32,6 +33,12 @@ export default function Home() {
             console.log(res);
           }
         }
+      />
+
+      <Link
+        text="Link me!"
+        href="https://www.cmpsc.uk"
+        target="_blank"
       />
     </main>
   );
