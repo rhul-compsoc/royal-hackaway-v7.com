@@ -49,13 +49,11 @@ export default function CountdownTimer({ date }: { date: Date }) {
     });
 
     return (
-        <div className="w-full">
-            <div className="blur-none mx-auto md:pl-20 md:mx-0 pt-20 w-fit">
+            <div className="w-fit">
                 <span className="text-5xl md:text-8xl">{days}</span><span className="text-xl md:text-4xl"> days</span><br />
                 <span className="text-5xl md:text-8xl">{hours}</span><span className="text-xl md:text-4xl"> hours</span><br />
                 <span className="text-5xl md:text-8xl">{minutes}</span><span className="text-xl md:text-4xl"> minutes</span><br />
                 <span className="text-5xl md:text-8xl">{seconds}</span><span className="text-xl md:text-4xl"> seconds</span>
             </div>
-        </div>
     )
 }
