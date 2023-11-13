@@ -10,6 +10,7 @@ import { Link } from "@/components/link";
 import { Schedule } from "@/components/schedule";
 import { CountdownTimer } from "@/components/countdown";
 import Image from 'next/image';
+import { Card } from '@/components/card';
 
 export default function Home() {
   return (
@@ -64,6 +65,37 @@ export default function Home() {
           href="https://www.cmpsc.uk"
           target="_blank"
         />
+
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
+          <Card
+            name='Joseph'
+            position='Treasurer'
+            img='joseph.jpg'
+            alt='joseph'
+          />
+
+          <Card
+            name='Joseph'
+            position='Treasurer'
+            img='joseph.jpg'
+            alt='joseph'
+          />
+
+          <Card
+            name='Joseph'
+            position='Treasurer'
+            img='joseph.jpg'
+            alt='joseph'
+          />
+
+          <Card
+            name='Joseph'
+            position='Treasurer'
+            img='joseph.jpg'
+            alt='joseph'
+          />
+        </div>
+        
       </div>
 
       <div className="flex-col min-h-screen items-center justify-between p-96">
