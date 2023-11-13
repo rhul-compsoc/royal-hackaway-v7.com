@@ -95,7 +95,7 @@ export default function Home() {
             alt='joseph'
           />
         </div>
-        
+
       </div>
 
       <div className="flex-col min-h-screen items-center justify-between p-96">
