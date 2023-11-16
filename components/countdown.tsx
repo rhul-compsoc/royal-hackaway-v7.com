@@ -7,7 +7,6 @@ interface Props {
 };
 
 function getTimeUntil(date: Date): number {
-  console.log(date);
   return Math.max(date.getTime() - Date.now(), 0);
 }
 
