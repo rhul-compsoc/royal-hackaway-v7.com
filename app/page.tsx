@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       <div className="relative w-full h-full bg-white">
-        <div className="relative flex flex-col min-h-screen items-center justify-between py-24">
+        <div className="relative flex flex-col min-h-screen items-center py-24">
           <Accordion
             elements={[
               {
@@ -103,7 +103,7 @@ export default function Home() {
 
         </div>
 
-        <div className="relative flex-col min-h-screen items-center justify-between p-96">
+        <div className="relative w-full sm:w-3/4 md:w-2/3 mx-auto mt-20 mb-44 flex-col items-center justify-between">
           <Schedule
             events={[
               {
