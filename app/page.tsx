@@ -24,7 +24,7 @@ export default function Home() {
             className="object-cover blur brightness-50" />
         </div>
       </div>
-      <div className="flex flex-col min-h-screen items-center justify-between p-24">
+      <div className="flex flex-col min-h-screen items-center">
         <div className="w-full pt-10">
           <Image alt="Hackaway V7 Logo" src={logo} className="blur-none drop-shadow-[4px_4px_rgba(217,91,23,.75)] mx-auto lg:w-1/2 w-3/4" />
         </div>
