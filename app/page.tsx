@@ -15,7 +15,7 @@ import { Card } from '@/components/card';
 export default function Home() {
   return (
     <main>
-      <div className="absolute h-screen w-full [clip-path:inset(0,0,0,0)]">
+      <div className="absolute h-screen w-full [clip-path:inset(0,0,0,0)] bg-black">
         <div className="fixed w-full h-full left-0 top-0">
           <Image alt="Hackaway Photo"
             src={background}
