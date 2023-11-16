@@ -9,7 +9,7 @@ interface Props {
 
 export const Accordion: React.FC<Props> = ({ elements }): JSX.Element => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 w-full px-5 sm:px-10 md:w-3/4 md:px-0 lg:w-2/3">
       {elements &&
         elements.map((element, index) => (
           <details key={index} className="group [&_summary::-webkit-details-marker]:hidden">

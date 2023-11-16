@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       <div className="relative w-full h-full bg-white">
-        <div className="relative flex flex-col min-h-screen items-center justify-between p-24">
+        <div className="relative flex flex-col min-h-screen items-center justify-between py-24">
           <Accordion
             elements={[
               {
