@@ -52,18 +52,18 @@ export const CountdownTimer: React.FC<Props> = ({ date }): JSX.Element => {
   });
 
   return (
-    <div className="w-fit">
-      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{days}</span>
-      <span className="text-xl md:text-4xl text-text-white"> days</span><br />
+    <div className="w-full">
+      <span className="text-5xl sm:text-8xl text-text-white">{days}</span>
+      <span className="text-xl sm:text-2xl md:text-4xl text-right text-white"> days</span><br />
 
-      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{hours}</span>
-      <span className="text-xl md:text-4xl text-text-white"> hours</span><br />
+      <span className="text-5xl sm:text-8xl text-text-white">{hours}</span>
+      <span className="text-xl sm:text-2xl md:text-4xl text-right text-white"> hours</span><br />
 
-      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{minutes}</span>
-      <span className="text-xl md:text-4xl text-text-white"> minutes</span><br />
+      <span className="text-5xl sm:text-8xl text-text-white">{minutes}</span>
+      <span className="text-xl sm:text-2xl md:text-4xl text-right text-white"> minutes</span><br />
 
-      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{seconds}</span>
-      <span className="text-xl md:text-4xl text-text-white"> seconds</span>
+      <span className="text-5xl sm:text-8xl text-text-white">{seconds}</span>
+      <span className="text-xl sm:text-2xl md:text-4xl text-right text-white"> seconds</span>
     </div>
   );
 }
