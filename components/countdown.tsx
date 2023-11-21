@@ -53,16 +53,16 @@ export const CountdownTimer: React.FC<Props> = ({ date }): JSX.Element => {
 
   return (
     <div className="w-fit">
-      <span className="text-5xl md:text-8xl text-text-white">{days}</span>
+      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{days}</span>
       <span className="text-xl md:text-4xl text-text-white"> days</span><br />
 
-      <span className="text-5xl md:text-8xl text-text-white">{hours}</span>
+      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{hours}</span>
       <span className="text-xl md:text-4xl text-text-white"> hours</span><br />
 
-      <span className="text-5xl md:text-8xl text-text-white">{minutes}</span>
+      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{minutes}</span>
       <span className="text-xl md:text-4xl text-text-white"> minutes</span><br />
 
-      <span className="text-5xl md:text-8xl text-text-white">{seconds}</span>
+      <span className="text-5xl sm:text-6xl md:text-8xl text-text-white">{seconds}</span>
       <span className="text-xl md:text-4xl text-text-white"> seconds</span>
     </div>
   );

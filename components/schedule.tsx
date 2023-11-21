@@ -29,9 +29,12 @@ export const Schedule: React.FC<Props> = ({ events }): JSX.Element => {
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                 {event.time}
               </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                <span className="font-semibold">{event.title}</span><br/>
-                <span className="">{event.description}</span>
+              <td className="px-4 py-2 text-gray-700">
+                <div className="whitespace-normal">
+                  <span className="font-semibold">{event.title}</span>
+                  <br />
+                  <span className="">{event.description}</span>
+                </div>
               </td>
             </tr>
           ))}

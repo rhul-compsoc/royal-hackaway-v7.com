@@ -21,10 +21,10 @@ export default function Home() {
             src={background}
             placeholder="blur"
             fill
-            className="object-cover blur brightness-50" />
+            className="object-cover blur brightness-[.35]" />
         </div>
       </div>
-      <div className="flex flex-col min-h-screen items-center justify-between p-24">
+      <div className="flex flex-col min-h-screen items-center">
         <div className="w-full pt-10">
           <Image alt="Hackaway V7 Logo" src={logo} className="blur-none drop-shadow-[4px_4px_rgba(217,91,23,.75)] mx-auto lg:w-1/2 w-3/4" />
         </div>
@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       <div className="relative w-full h-full bg-white">
-        <div className="relative flex flex-col min-h-screen items-center justify-between p-24">
+        <div className="relative flex flex-col min-h-screen items-center py-24">
           <Accordion
             elements={[
               {
@@ -71,7 +71,7 @@ export default function Home() {
             target="_blank"
           />
 
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
             <Card
               name='Joseph'
               position='Treasurer'
@@ -103,7 +103,7 @@ export default function Home() {
 
         </div>
 
-        <div className="relative flex-col min-h-screen items-center justify-between p-96">
+        <div className="relative w-full sm:w-3/4 md:w-2/3 mx-auto mt-20 mb-44 flex-col items-center justify-between">
           <Schedule
             events={[
               {
