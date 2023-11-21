@@ -21,7 +21,7 @@ export default function Home() {
             src={background}
             placeholder="blur"
             fill
-            className="object-cover blur brightness-50" />
+            className="object-cover blur brightness-[.35]" />
         </div>
       </div>
       <div className="flex flex-col min-h-screen items-center">
