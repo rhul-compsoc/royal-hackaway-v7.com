@@ -39,9 +39,9 @@ export default function Home() {
             <CountdownTimer date={new Date(2024, 1, 3, 10)} />
           </div>
         </div>
-        <div className="h-full w-full mt-32 hidden lg:block">
+        <div className="h-full w-full mt-5 sm:mt-10 lg:mt-32 block md:hidden lg:block text-sm lg:text-3xl">
           <div className="mx-auto w-fit">
-            <FontAwesomeIcon className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]" size="10x" color="white" icon={faChevronDown} />
+            <FontAwesomeIcon className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]" size="5x" color="white" icon={faChevronDown} />
           </div>
         </div>
       </div>
