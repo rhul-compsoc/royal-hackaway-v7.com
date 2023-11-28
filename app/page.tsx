@@ -30,12 +30,12 @@ export default function Home() {
         <div className="w-full pt-10">
           <Image alt="Hackaway V7 Logo" src={logo} className="blur-none drop-shadow-[4px_4px_rgba(217,91,23,.75)] mx-auto lg:w-1/2 w-3/4" />
         </div>
-        <div className="w-full blur-none mt-5 sm:mt-10">
+        <div className="w-full blur-none mt-5 sm:mt-10 mb-20 lg:mb-10">
           <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-3xl">
             <CountdownTimer date={new Date(2024, 1, 3, 10)} />
           </div>
         </div>
-        <div className="h-full w-full relative mt-32">
+        <div className="h-full w-full mt-32 hidden lg:block">
           <div className="mx-auto w-fit">
             <FontAwesomeIcon className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]" size="10x" color="white" icon={faChevronDown} />
           </div>
