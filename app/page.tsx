@@ -4,9 +4,7 @@ import logo from './v7-logo.png'
 import background from './background.png'
 
 import { Accordion } from "@/components/accordion";
-import { Button } from "@/components/button";
 import { Footer } from "@/components/footer";
-import { Link } from "@/components/link";
 import { Schedule } from "@/components/schedule";
 import { CountdownTimer } from "@/components/countdown";
 import Image from 'next/image';
