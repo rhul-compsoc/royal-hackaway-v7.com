@@ -11,6 +11,8 @@ import { Schedule } from "@/components/schedule";
 import { CountdownTimer } from "@/components/countdown";
 import Image from 'next/image';
 import { Card } from '@/components/card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
@@ -33,9 +35,14 @@ export default function Home() {
             <CountdownTimer date={new Date(2024, 1, 3, 10)} />
           </div>
         </div>
+        <div className="h-full w-full relative mt-32">
+          <div className="mx-auto w-fit">
+            <FontAwesomeIcon className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]" size="10x" color="white" icon={faChevronDown} />
+          </div>
+        </div>
       </div>
 
-      <div className="relative w-full h-full bg-white">
+      <div className="relative w-full h-full bg-white" id="hackaway-info">
         <div className="relative flex flex-col min-h-screen items-center py-24">
           <Accordion
             elements={[
