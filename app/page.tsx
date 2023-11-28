@@ -24,17 +24,13 @@ export default function Home() {
             className="object-cover blur brightness-[.35]" />
         </div>
       </div>
-      <div className="flex flex-col min-h-screen items-center">
+      <div className="min-h-screen items-center">
         <div className="w-full pt-10">
           <Image alt="Hackaway V7 Logo" src={logo} className="blur-none drop-shadow-[4px_4px_rgba(217,91,23,.75)] mx-auto lg:w-1/2 w-3/4" />
         </div>
-        <div className="w-full blur-none lg:grid lg:grid-cols-2 mt-5 sm:mt-10">
-          <div className="w-1/3 mx-auto lg:ml-20 lg:mx-0 p-5 sm:mt-20 w-fit drop-shadow bg-accent rounded-3xl">
+        <div className="w-full blur-none mt-5 sm:mt-10">
+          <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-3xl">
             <CountdownTimer date={new Date(2024, 1, 3, 10)} />
-          </div>
-          <div className="lg:text-right lg:mt-0 sm:mt-20 mt-10 grid justify-between text-white drop-shadow-[3px_3px_rgba(217,91,23,.75)] text-xl sm:text-2xl md:text-3xl lg:text-5xl lg:mr-10 mx-auto text-center bg-accent rounded-3xl">
-            <p className="lg:my-auto mb-10 mx-auto">Windsor Building, Royal Holloway University of London</p>
-            <p className="lg:my-auto mx-auto">Saturday 3rd - Sunday 4th February 2024</p>
           </div>
         </div>
       </div>
