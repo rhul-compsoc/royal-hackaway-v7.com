@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Sponsors } from '@/components/sponsors';
 import { H2 } from '@/components/title';
+import { Committee } from '@/components/committee';
 
 export default function Home() {
   return (
@@ -66,7 +67,7 @@ export default function Home() {
                 you cannot start implementing your project before the specified time`
               },
               {
-                title: "Do I have to eb studying Computer Science?",
+                title: "Do I have to be studying Computer Science?",
                 body: `Nope! Although doing Computer Science or
                 knowing how to code helps, it is not required!`
               },
@@ -79,7 +80,7 @@ export default function Home() {
               },
               {
                 title: "Who can attend?",
-                body: `Anyone who is 18+ and is a current studen or has
+                body: `Anyone who is 18+ and is a current student or has
                 graduated in the past six months!`
               },
               {
@@ -90,76 +91,12 @@ export default function Home() {
               {
                 title: "Who owns my project?",
                 body: `All code is owned by you and your team members!
-                We recommend putting your project on Github, and making it open source!`
+                We recommend putting your project on GitHub, and making it open source!`
               },
             ]}
           />
 
-          <H2 text="Meet the team!"/>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
-            <Card
-              name='Joseph'
-              position='Treasurer'
-              img='joseph.jpg'
-              alt='joseph'
-            />
-
-            <Card
-              name='Jacob'
-              position='Events'
-              img='jacob.jpg'
-              alt='jacob'
-            />
-
-            <Card
-              name='Zak'
-              position='President'
-              img='zak.png'
-              alt='zak'
-            />
-
-            <Card
-              name='Sinan'
-              position='Vice President'
-              img='sinan.png'
-              alt='sinan'
-            />
-
-            <Card
-              name='Artem'
-              position='Secretary'
-              img='artem.jpg'
-              alt='artem'
-            />
-
-            <Card
-              name='Natan'
-              position='Promotions'
-              img='natan.jpg'
-              alt='natan'
-            />
-
-            <Card
-              name='Abdi'
-              position='Competitions'
-              img='abdi.png'
-              alt='abdi'
-            />
-
-            <Card
-              name='Charley'
-              position='Charity'
-              img='charley.jpg'
-              alt='charley'
-            />
-            <Card
-              name='Ole'
-              position='First Year Rep'
-              img='ole.jpg'
-              alt='ole'
-            />
-          </div>
+          <Committee/>
 
         </div>
 
@@ -189,4 +126,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
