@@ -14,9 +14,9 @@
   .dark {
     --text: #FFFAEB;
     --background: #140f00;
-    --primary: #d95b17;
+    --primary: #f86c30;
     --secondary: #291f00;
-    --accent: #f86c30;
+    --accent: #d95b17;
   }
 }
 

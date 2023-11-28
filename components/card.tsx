@@ -14,8 +14,8 @@ export const Card: React.FC<Props> = ({ name, position, img, alt }): JSX.Element
         className="h-56 w-full object-cover"
       />
 
-      <div className="bg-primary hover:bg-accent focus:bg-accent hover:opacity-75 p-4 sm:p-6">
-        <h3 className="mt-0.5 text-lg text-text-white">
+      <div className="bg-primary p-4 sm:p-6">
+        <h3 className="mt-0.5 font-extrabold text-2xl text-text-white">
           {name}
         </h3>
         <h4 className="mt-0.5 text-lg font-light text-text-white">

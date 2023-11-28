@@ -113,13 +113,13 @@ export const Footer = (): JSX.Element => {
                 </li>
 
                 <li>
-                  <a href="#ccoc_section" className="text-gray-700 transition hover:opacity-75">
+                  <a href="https://royalhackaway.com/CodeOfConduct_2.pdf" target="_blank" className="text-gray-700 transition hover:opacity-75">
                     CompSoc Code of Conduct
                   </a>
                 </li>
 
                 <li>
-                  <a href="#mcoc_section" className="text-gray-700 transition hover:opacity-75">
+                  <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" className="text-gray-700 transition hover:opacity-75">
                     MLH Code of Conduct
                   </a>
                 </li>
