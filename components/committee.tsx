@@ -3,7 +3,7 @@ import { H2 } from "./title";
 
 export const Committee = () => {
   return (
-    <div>
+    <div className="relative flex flex-col min-h-[50%] items-center py-24">
       <H2 text="Meet the team!"/>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
         <Card
