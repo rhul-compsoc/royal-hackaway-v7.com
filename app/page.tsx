@@ -3,16 +3,12 @@
 import logo from './v7-logo.png'
 import background from './background.png'
 
-import { Accordion } from "@/components/accordion";
 import { Footer } from "@/components/footer";
-import { Schedule } from "@/components/schedule";
 import { CountdownTimer } from "@/components/countdown";
 import Image from 'next/image';
-import { Card } from '@/components/card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Sponsors } from '@/components/sponsors';
-import { H2 } from '@/components/title';
 import { Committee } from '@/components/committee';
 import { FAQ } from '@/components/faq';
 import { Information } from '@/components/information';
