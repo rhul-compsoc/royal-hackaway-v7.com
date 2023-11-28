@@ -7,20 +7,6 @@ export const Committee = () => {
       <H2 text="Meet the team!"/>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
         <Card
-          name='Joseph'
-          position='Treasurer'
-          img='joseph.jpg'
-          alt='joseph'
-        />
-
-        <Card
-          name='Jacob'
-          position='Events'
-          img='jacob.jpg'
-          alt='jacob'
-        />
-
-        <Card
           name='Zak'
           position='President'
           img='zak.png'
@@ -32,6 +18,20 @@ export const Committee = () => {
           position='Vice President'
           img='sinan.png'
           alt='sinan'
+        />
+
+        <Card
+          name='Joseph'
+          position='Treasurer'
+          img='joseph.jpg'
+          alt='joseph'
+        />
+
+        <Card
+          name='Jacob'
+          position='Events'
+          img='jacob.jpg'
+          alt='jacob'
         />
 
         <Card
