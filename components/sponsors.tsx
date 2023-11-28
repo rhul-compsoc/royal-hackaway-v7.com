@@ -10,31 +10,27 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
     <div>
       <H2 text="Meet the Sponsors!"/>
       <div>
-        {/* Platinum */}
         <div>
           <H3 text="Platinum"></H3>
         </div>
-        {/* Gold */}
         <div>
           <H3 text="Gold"></H3>
         </div>
-        {/* Silver */}
         <div>
           <H3 text="Silver"></H3>
         </div>
-        {/* Bronze */}
         <div>
           <H3 text="Bronze"></H3>
         </div>
-        {/* Supporter */}
         <div>
         <H3 text="Supporter"></H3>
         </div>
-        {/* Become a Sponsor Button */}
       </div>
 
-      <div>
-        <Link text="Become a sponsor!" href="" target="_blank"/>
+      <div className="w-full">
+        <div className="mx-auto w-fit">
+          <Link text="Become a sponsor!" href="" target="_blank"/>
+        </div>
       </div>
     </div>
   );
