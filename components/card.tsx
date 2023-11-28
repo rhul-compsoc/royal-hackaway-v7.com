@@ -15,7 +15,7 @@ export const Card: React.FC<Props> = ({ name, position, img, alt }): JSX.Element
       />
 
       <div className="bg-primary p-4 sm:p-6">
-        <h3 className="mt-0.5 text-lg text-text-white">
+        <h3 className="mt-0.5 font-bold text-lg text-text-white">
           {name}
         </h3>
         <h4 className="mt-0.5 text-lg font-light text-text-white">
