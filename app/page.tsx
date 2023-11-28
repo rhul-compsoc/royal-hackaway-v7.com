@@ -11,6 +11,8 @@ import { Schedule } from "@/components/schedule";
 import { CountdownTimer } from "@/components/countdown";
 import Image from 'next/image';
 import { Card } from '@/components/card';
+import { Sponsors } from '@/components/sponsors';
+import { H2 } from '@/components/title';
 
 export default function Home() {
   return (
@@ -37,39 +39,56 @@ export default function Home() {
 
       <div className="relative w-full h-full bg-white">
         <div className="relative flex flex-col min-h-screen items-center py-24">
+          <H2 text="Frequently asked questions!"/>
           <Accordion
             elements={[
               {
-                title: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-                body: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!`
+                title: "Can I go home overnight / leave early?",
+                body: `The short answer is yes! If you have a hotel room booked or you need to leave for any reason,
+                please make sure you check-out and check back in when you return
+                This is for fire safety and accountability reasons.`
               },
               {
-                title: "Lorem ipsum dolor sit amet consectetur?",
-                body: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!`
+                title: "What is a Hackathon?",
+                body: `Hackathons are programming competitions where
+                people work together to make something cool over the course of a weekend!`
+              },
+              {
+                title: "Can I start before I join?",
+                body: `Absolutely not! While you can explore ideas,
+                you cannot start implementing your project before the specified time`
+              },
+              {
+                title: "Do I have to eb studying Computer Science?",
+                body: `Nope! Although doing Computer Science or
+                knowing how to code helps, it is not required!`
+              },
+              {
+                title: "Do I need to come with a team?",
+                body: `If you don't have a team in mind before you come,
+                you can make a team when you arrive, so no pressure!
+                Just note that team sizes are limited to a maximum
+                of five hackers per team!`
+              },
+              {
+                title: "Who can attend?",
+                body: `Anyone who is 18+ and is a current studen or has
+                graduated in the past six months!`
+              },
+              {
+                title: "How much does it cost?",
+                body: `£0 and your weekend! Royal Hackaway is free to attend,
+                thanks to all the support provided by our sponsors!`
+              },
+              {
+                title: "Who owns my project?",
+                body: `All code is owned by you and your team members!
+                We recommend putting your project on Github, and making it open source!`
               },
             ]}
           />
 
-          <Button
-            text="Click Me!"
-            on_click={ () => {
-                let res = prompt("button pressed");
-                console.log(res);
-              }
-            }
-          />
-
-          <Link
-            text="Link me!"
-            href="https://www.cmpsc.uk"
-            target="_blank"
-          />
+          <H2 text="Meet the team!"/>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
             <Card
@@ -80,30 +99,65 @@ export default function Home() {
             />
 
             <Card
-              name='Joseph'
-              position='Treasurer'
-              img='joseph.jpg'
-              alt='joseph'
+              name='Jacob'
+              position='Events'
+              img='jacob.jpg'
+              alt='jacob'
             />
 
             <Card
-              name='Joseph'
-              position='Treasurer'
-              img='joseph.jpg'
-              alt='joseph'
+              name='Zak'
+              position='President'
+              img='zak.png'
+              alt='zak'
             />
 
             <Card
-              name='Joseph'
-              position='Treasurer'
-              img='joseph.jpg'
-              alt='joseph'
+              name='Sinan'
+              position='Vice President'
+              img='sinan.png'
+              alt='sinan'
+            />
+
+            <Card
+              name='Artem'
+              position='Secretary'
+              img='artem.jpg'
+              alt='artem'
+            />
+
+            <Card
+              name='Natan'
+              position='Promotions'
+              img='natan.jpg'
+              alt='natan'
+            />
+
+            <Card
+              name='Abdi'
+              position='Competitions'
+              img='abdi.png'
+              alt='abdi'
+            />
+
+            <Card
+              name='Charley'
+              position='Charity'
+              img='charley.jpg'
+              alt='charley'
+            />
+            <Card
+              name='Ole'
+              position='First Year Rep'
+              img='ole.jpg'
+              alt='ole'
             />
           </div>
 
         </div>
 
         <div className="relative w-full sm:w-3/4 md:w-2/3 mx-auto mt-20 mb-44 flex-col items-center justify-between">
+          <H2 text="Schedule!"/>
           <Schedule
             events={[
               {
@@ -118,6 +172,10 @@ export default function Home() {
               },
             ]}
           />
+        </div>
+
+        <div className="relative w-full sm:w-3/4 md:w-2/3 mx-auto mt-20 mb-44 flex-col items-center justify-between">
+          <Sponsors/>
         </div>
 
         <Footer/>
