@@ -1,5 +1,14 @@
 import { Card } from "./card";
 import { H2 } from "./title";
+import zak from "@/public/zak.png"
+import sinan from "@/public/sinan.png"
+import joseph from "@/public/joseph.jpg"
+import jacob from "@/public/jacob.jpg"
+import artem from "@/public/artem.jpg"
+import natan from "@/public/natan.jpg"
+import abdi from "@/public/abdi.png"
+import charley from "@/public/charley.jpg"
+import ole from "@/public/ole.jpg"
 
 export const Committee = () => {
   return (
@@ -9,63 +18,63 @@ export const Committee = () => {
         <Card
           name='Zak'
           position='President'
-          img='zak.png'
+          img={zak}
           alt='zak'
         />
 
         <Card
           name='Sinan'
           position='Vice President'
-          img='sinan.png'
+          img={sinan}
           alt='sinan'
         />
 
         <Card
           name='Joseph'
           position='Treasurer'
-          img='joseph.jpg'
+          img={joseph}
           alt='joseph'
         />
 
         <Card
           name='Jacob'
           position='Events'
-          img='jacob.jpg'
+          img={jacob}
           alt='jacob'
         />
 
         <Card
           name='Artem'
           position='Secretary'
-          img='artem.jpg'
+          img={artem}
           alt='artem'
         />
 
         <Card
           name='Natan'
           position='Promotions'
-          img='natan.jpg'
+          img={natan}
           alt='natan'
         />
 
         <Card
           name='Abdi'
           position='Competitions'
-          img='abdi.png'
+          img={abdi}
           alt='abdi'
         />
 
         <Card
           name='Charley'
           position='Charity'
-          img='charley.jpg'
+          img={charley}
           alt='charley'
         />
 
         <Card
           name='Ole'
           position='First Year Rep'
-          img='ole.jpg'
+          img={ole}
           alt='ole'
         />
       </div>

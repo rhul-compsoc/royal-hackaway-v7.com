@@ -1,16 +1,19 @@
+import Image, { StaticImageData } from "next/image";
+
 interface Props {
   name: string;
   position: string;
-  img: string;
+  img: StaticImageData;
   alt: string;
 }
 
 export const Card: React.FC<Props> = ({ name, position, img, alt }): JSX.Element => {
   return (
     <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-      <img
+      <Image
         alt={alt}
         src={img}
+        placeholder="blur"
         className="h-56 w-full object-cover"
       />
 
