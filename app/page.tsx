@@ -13,6 +13,7 @@ import { Committee } from '@/components/committee';
 import { FAQ } from '@/components/faq';
 import { Information } from '@/components/information';
 import { Timetable } from '@/components/timetable';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -37,7 +38,9 @@ export default function Home() {
         </div>
         <div className="h-full w-full mt-5 sm:mt-10 lg:mt-32 block md:hidden lg:block text-sm lg:text-3xl">
           <div className="mx-auto w-fit">
-            <FontAwesomeIcon className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]" size="5x" color="white" icon={faChevronDown} />
+            <a href="/#hackaway-info">
+              <FontAwesomeIcon className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]" size="5x" color="white" icon={faChevronDown} />
+            </a>
           </div>
         </div>
       </div>
