@@ -4,7 +4,7 @@ import { faCalendar, faMap } from "@fortawesome/free-regular-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { Map } from "./map";
 import { Button } from "./button";
-import { Bink } from "./bink";
+import { ButtonLink } from "./link";
 import Link from "next/link";
 
 interface Props {
@@ -27,12 +27,11 @@ export const Information: React.FC<Props> = (): JSX.Element => {
 
       <Map></Map>
 
-      <Bink
+      <ButtonLink
         text="Get Tickets!"
         href=""
         target="_blank"
-      >
-      </Bink>
+      />
 
       <p className="mt-2 ml-2 mr-2 mb-2">
         <Link

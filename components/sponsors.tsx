@@ -1,4 +1,4 @@
-import { Bink } from "./bink";
+import { ButtonLink } from "./link";
 import { H2, H3 } from "./title";
 
 interface Props {
@@ -29,7 +29,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
       <div className="w-full">
         <div className="mx-auto w-fit">
-          <Bink text="Become a sponsor!" href="" target="_blank"/>
+          <ButtonLink text="Become a sponsor!" href="" target="_blank"/>
         </div>
       </div>
     </div>
