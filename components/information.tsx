@@ -4,7 +4,7 @@ import { faCalendar, faMap } from "@fortawesome/free-regular-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { Map } from "./map";
 import { Button } from "./button";
-import { ButtonLink } from "./link";
+import { Blink } from "./blink";
 import Link from "next/link";
 
 interface Props {
@@ -27,7 +27,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
 
       <Map></Map>
 
-      <ButtonLink
+      <Blink
         text="Get Tickets!"
         href=""
         target="_blank"
