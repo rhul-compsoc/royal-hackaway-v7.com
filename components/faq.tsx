@@ -14,7 +14,7 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
           {
             title: "Can I go home overnight / leave early?",
             body: `The short answer is yes! If you have a hotel room booked or you need to leave for any reason,
-            please make sure you check-out and check back in when you return
+            please make sure you check-out and check back in when you return.
             This is for fire safety and accountability reasons.`
           },
           {

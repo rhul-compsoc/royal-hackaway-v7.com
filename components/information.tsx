@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { H2 } from "./title";
 import { faCalendar, faMap } from "@fortawesome/free-regular-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 import { Map } from "./map";
-import { Button } from "./button";
-import { Blink } from "./blink";
+import { BigBlink } from "./blink";
 import Link from "next/link";
 
 interface Props {
@@ -17,7 +17,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
       <H2 text="Information"/>
       <p>
         <FontAwesomeIcon icon={faCalendar} />
-        {} Saturday the 3rd till Sunday the 4th of February 2024
+        {} Saturday the 27th till Sunday the 28th of January 2024
       </p>
 
       <p>
@@ -25,13 +25,13 @@ export const Information: React.FC<Props> = (): JSX.Element => {
         {} Windsor Building, Royal Holloway, University of London
       </p>
 
-      <Map></Map>
-
-      <Blink
-        text="Get Tickets!"
-        href=""
-        target="_blank"
-      />
+      <div className="mt-4 mb-4">
+        <BigBlink
+          text="Get Tickets!"
+          href=""
+          target="_blank"
+        />
+      </div>
 
       <p className="mt-2 ml-2 mr-2 mb-2">
         <Link
@@ -43,13 +43,23 @@ export const Information: React.FC<Props> = (): JSX.Element => {
         </Link>
 
         <Link
-          href={"https://dc.cmpsc.uk"}
+          href={"https://www.instagram.com/rhulcompsoc/?hl=en"}
           target="_blank"
           className="mt-2"
         >
-          <FontAwesomeIcon size="xl" icon={faDiscord} />
+          <FontAwesomeIcon size="xl" icon={faInstagram} />
+        </Link>
+
+        <Link
+          href={"https://maps.app.goo.gl/7neALzxuHu5iQEMw7"}
+          target="_blank"
+          className="mt-2 ml-2"
+        >
+          <FontAwesomeIcon size="xl" icon={faMapPin} />
         </Link>
       </p>
+
+      <Map></Map>
     </div>
   );
 };

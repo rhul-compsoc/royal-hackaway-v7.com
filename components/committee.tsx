@@ -13,7 +13,7 @@ import ole from "@/public/ole.jpg"
 export const Committee = () => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center py-24">
-      <H2 text="Meet the team!"/>
+      <H2 text="Meet our team!"/>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
         <Card
           name='Zak'

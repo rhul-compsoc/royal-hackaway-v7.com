@@ -25,7 +25,7 @@ export const H3: React.FC<Props> = ({ text }): JSX.Element => {
 export const H4: React.FC<Props> = ({ text }): JSX.Element => {
   return (
     <h4
-      className="text-center mb-4 mt-4 text-2xl font-bold tracking-tight text-text-black sm:text-5xl"
+      className="text-center mb-4 mt-4 text-xl font-medium tracking-tight text-text-black sm:text-5xl"
     >
       {text}
     </h4>
