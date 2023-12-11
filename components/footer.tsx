@@ -119,8 +119,14 @@ export const Footer = (): JSX.Element => {
                 </li>
 
                 <li>
-                  <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" className="text-gray-700 transition hover:opacity-75">
+                  <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf?_gl=1*1251erg*_ga*MTEwMjE5OTUxNS4xNzAxOTY2NzYw*_ga_E5KT6TC4TK*MTcwMTk2Njc2MC4xLjEuMTcwMTk2NzI4MS4wLjAuMA" target="_blank" className="text-gray-700 transition hover:opacity-75">
                     MLH Code of Conduct
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.hackathons.org.uk/code-of-conduct" target="_blank" className="text-gray-700 transition hover:opacity-75">
+                    Hackathons UK Code of Conduct
                   </a>
                 </li>
 

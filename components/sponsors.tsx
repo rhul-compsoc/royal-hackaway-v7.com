@@ -1,7 +1,9 @@
 import { Blink } from "./blink";
 import { Sponsor } from "./sponsor";
 import { H2, H3 } from "./title";
-import stand_out_stickers_logo from "@/public/stand_out_stickers_logo.svg"
+import stand_out_stickers_logo from "@/public/stand_out_stickers_logo.svg";
+import rhsu_logo from "@/public/rhsu_logo_black.webp";
+import rhul_logo from "@/public/royalholloway.webp";
 
 interface Props {
 
@@ -24,7 +26,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
         <div>
           <H3 text="Bronze"></H3>
         </div>
-        <div>
+        <div className="flex flex-col items-center text-center">
           <H3 text="Supporter"></H3>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             <Sponsor
@@ -34,11 +36,27 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
             />
           </div>
         </div>
+
+        <div className="flex flex-col items-center text-center">
+          <H3 text="Partner"></H3>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+            <Sponsor
+              name="RHSU"
+              img={rhsu_logo}
+              alt="RHSU Logo"
+            />
+            <Sponsor
+              name="RHUL"
+              img={rhul_logo}
+              alt="RHUL Logo"
+            />
+          </div>
+        </div>
       </div>
 
       <div className="w-full">
-        <div className="mx-auto w-fit">
-          <Blink text="Become a sponsor!" href="" target="_blank"/>
+        <div className="mx-auto w-fit mb-16 mt-8">
+          <Blink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank"/>
         </div>
       </div>
     </div>

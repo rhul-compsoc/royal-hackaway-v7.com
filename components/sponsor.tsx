@@ -12,7 +12,7 @@ export const Sponsor: React.FC<Props> = ({ name, img, alt }): JSX.Element => {
       <Image
         alt={alt}
         src={img}
-        className="h-56 w-auto object-cover"
+        className="h-32 w-auto object-cover"
       />
     </div>
   );
