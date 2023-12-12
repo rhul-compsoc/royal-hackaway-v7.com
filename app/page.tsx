@@ -1,7 +1,7 @@
 'use client';
 
-import logo from './v7-logo.png'
-import background from './background.png'
+import logo from '@/public/full-logo.png'
+import background from '@/public/hackaway.png'
 
 import { Footer } from "@/components/footer";
 import { CountdownTimer } from "@/components/countdown";
@@ -13,7 +13,6 @@ import { Committee } from '@/components/committee';
 import { FAQ } from '@/components/faq';
 import { Information } from '@/components/information';
 import { Timetable } from '@/components/timetable';
-import Link from 'next/link';
 
 export default function Home() {
   return (
