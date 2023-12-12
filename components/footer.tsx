@@ -1,16 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faXTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Image from "next/image";
+import logo from "@/public/full-logo.png";
 
 export const Footer = (): JSX.Element => {
   return (
     <footer className="relative bg-white lg:grid lg:grid-cols-5" id="footer">
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
-        <img
-          src="hackaway.png"
-          alt="Royal Hackaway"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        <Image src={logo} alt="logo" placeholder="blur" className="filter brightness-75 w-3/4 mx-auto" />
       </div>
 
       <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
@@ -30,7 +28,7 @@ export const Footer = (): JSX.Element => {
             </p>
 
             <p className="mt-8 space-y-1 text-sm text-gray-700">
-              made with love in egham
+              Made with love by RHUL CompSoc
             </p>
 
             <ul className="mt-8 flex gap-6">
@@ -107,7 +105,7 @@ export const Footer = (): JSX.Element => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#dp_section" className="text-gray-700 transition hover:opacity-75">
+                  <a href="https://www.su.rhul.ac.uk/pageassets/intranet/staff/policies/RHSU-Data-Protection-Policy-Feb-2022.pdf" className="text-gray-700 transition hover:opacity-75">
                     Data Protection
                   </a>
                 </li>
@@ -131,13 +129,13 @@ export const Footer = (): JSX.Element => {
                 </li>
 
                 <li>
-                  <a href="#sponsors_section" className="text-gray-700 transition hover:opacity-75">
+                  <a href="#sponsors" className="text-gray-700 transition hover:opacity-75">
                     Sponsors
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a href="#info" className="text-gray-700 transition hover:opacity-75">
                     Contact Us
                   </a>
                 </li>
@@ -149,19 +147,19 @@ export const Footer = (): JSX.Element => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#about_section" target="_blank" className="text-gray-700 transition hover:opacity-75">
+                  <a href="#about" target="_blank" className="text-gray-700 transition hover:opacity-75">
                     About
                   </a>
                 </li>
 
                 <li>
-                  <a href="#team_section" className="text-gray-700 transition hover:opacity-75">
+                  <a href="#team" className="text-gray-700 transition hover:opacity-75">
                     Meet the Team
                   </a>
                 </li>
 
                 <li>
-                  <a href="#schedule_section" className="text-gray-700 transition hover:opacity-75">
+                  <a href="#schedule" className="text-gray-700 transition hover:opacity-75">
                     Schedule
                   </a>
                 </li>

@@ -13,6 +13,7 @@ import { Committee } from '@/components/committee';
 import { FAQ } from '@/components/faq';
 import { Information } from '@/components/information';
 import { Timetable } from '@/components/timetable';
+import Divider from '@/components/divider';
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
         <Committee/>
         <Timetable/>
         <Sponsors/>
+        <Divider />
         <Footer/>
       </div>
     </main>
