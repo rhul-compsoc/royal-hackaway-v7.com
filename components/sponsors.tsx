@@ -1,4 +1,4 @@
-import { Blink } from "./blink";
+import { BigBlink, Blink } from "./blink";
 import { Sponsor } from "./sponsor";
 import { H2, H3, H4 } from "./title";
 import stand_out_stickers_logo from "@/public/stand_out_stickers_logo.svg";
@@ -13,8 +13,13 @@ interface Props {
 
 export const Sponsors: React.FC<Props> = (): JSX.Element => {
   return (
-    <div>
+    <div className="mb-10" id="sponsors">
       <H2 text="Meet our Sponsors!"/>
+      <div className="w-full">
+        <div className="mx-auto w-fit mb-16 mt-8">
+          <BigBlink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank"/>
+        </div>
+      </div>
       <div>
         <div>
           <H3 text="Platinum"></H3>
@@ -73,12 +78,6 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               alt="RHUL Logo"
             />
           </div>
-        </div>
-      </div>
-
-      <div className="w-full">
-        <div className="mx-auto w-fit mb-16 mt-8">
-          <Blink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank"/>
         </div>
       </div>
     </div>

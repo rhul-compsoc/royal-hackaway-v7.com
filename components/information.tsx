@@ -13,11 +13,11 @@ interface Props {
 
 export const Information: React.FC<Props> = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col min-h-[50%] items-center py-24">
+    <div className="relative flex flex-col min-h-[50%] items-center pt-24" id="info">
       <H2 text="Information"/>
       <p>
         <FontAwesomeIcon icon={faCalendar} />
-        {} Saturday the 27th till Sunday the 28th of January 2024
+        {} Saturday 27th - Sunday 28th of January 2024
       </p>
 
       <p>
@@ -59,7 +59,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
         </Link>
       </p>
 
-      <Map></Map>
+      <Map />
     </div>
   );
 };
