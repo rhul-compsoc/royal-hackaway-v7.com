@@ -17,7 +17,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
       <H2 text="Information"/>
       <p>
         <FontAwesomeIcon icon={faCalendar} />
-        {} Saturday the 27th till Sunday the 28th of January 2024
+        {} Saturday 27th - Sunday 28th of January 2024
       </p>
 
       <p>

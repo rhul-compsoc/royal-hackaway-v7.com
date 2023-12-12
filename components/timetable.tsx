@@ -8,8 +8,9 @@ interface Props {
 export const Timetable: React.FC<Props> = (): JSX.Element => {
   return (
     <div className="relative w-full sm:w-3/4 md:w-2/3 mx-auto mt-20 mb-44 flex-col items-center min-h-[50%] justify-between">
-      <H2 text="Schedule!"/>
-      {/* <Schedule
+      <H2 text="Event Schedule"/>
+      {/* dead code smell ew
+      <Schedule
         events={[
           {
             time: "17:00",
@@ -23,7 +24,7 @@ export const Timetable: React.FC<Props> = (): JSX.Element => {
           },
         ]}
       /> */}
-      <H4 text="More to come soon!"></H4>
+      <H4 text="Coming Soon..."></H4>
     </div>
   );
 }
