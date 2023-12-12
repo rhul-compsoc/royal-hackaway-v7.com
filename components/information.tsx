@@ -15,12 +15,12 @@ export const Information: React.FC<Props> = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center pt-24" id="info">
       <H2 text="Information"/>
-      <p>
+      <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
         {} Saturday 27th - Sunday 28th of January 2024
       </p>
 
-      <p>
+      <p className="text-center px-4">
         <FontAwesomeIcon icon={faMap} />
         {} Windsor Building, Royal Holloway, University of London
       </p>
@@ -35,7 +35,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
 
       <p className="mt-2 ml-2 mr-2 mb-2">
         <Link
-          href={"https://dc.cmpsc.uk"}
+          href={"https://discord.gg/XptvsDZwXc"}
           target="_blank"
           className="ml-2 mr-2"
         >
@@ -43,7 +43,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
         </Link>
 
         <Link
-          href={"https://www.instagram.com/rhulcompsoc/?hl=en"}
+          href={"https://www.instagram.com/royalhackaway/"}
           target="_blank"
           className="mt-2"
         >
