@@ -4,7 +4,7 @@ import { faGithub, faXTwitter, faInstagram, faLinkedin } from '@fortawesome/free
 
 export const Footer = (): JSX.Element => {
   return (
-    <footer className="relative bg-white lg:grid lg:grid-cols-5">
+    <footer className="relative bg-white lg:grid lg:grid-cols-5" id="footer">
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
         <img
           src="hackaway.png"

@@ -7,7 +7,7 @@ interface Props {
 
 export const FAQ: React.FC<Props> = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col min-h-[50%] items-center py-24">
+    <div className="relative flex flex-col min-h-[50%] items-center py-24" id="faq">
       <H2 text="Frequently Asked Questions"/>
       <Accordion
         elements={[

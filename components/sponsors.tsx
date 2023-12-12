@@ -13,7 +13,7 @@ interface Props {
 
 export const Sponsors: React.FC<Props> = (): JSX.Element => {
   return (
-    <div className="mb-10">
+    <div className="mb-10" id="sponsors">
       <H2 text="Meet our Sponsors!"/>
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
