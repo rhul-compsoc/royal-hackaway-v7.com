@@ -14,7 +14,7 @@ interface Props {
 export const Information: React.FC<Props> = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center pt-24" id="info">
-      <H2 text="Information"/>
+      <H2 text="Royal Holloway's Annual Hackathon is Back!"/>
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
         {} Saturday 27th - Sunday 28th of January 2024
@@ -32,6 +32,10 @@ export const Information: React.FC<Props> = (): JSX.Element => {
           target="_blank"
         />
       </div>
+
+      <p className="w-3/4 text-lg tracking-tight lg:w-1/2 lg:text-xl py-10">
+        Royal Hackaway is Royal Holloway's annual hackathon, open to university students from the UK and around the world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or events, and work together to create the coolest project!
+      </p>
 
       <p className="mt-2 ml-2 mr-2 mb-2">
         <Link

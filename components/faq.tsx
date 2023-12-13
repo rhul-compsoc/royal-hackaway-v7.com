@@ -14,7 +14,9 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
           {
             title: "What is a Hackathon?",
             body: `Hackathons are programming competitions where
-            people work together to make something cool over the course of a weekend!`
+            people work in teams to make a project over a 24 hour event. The overall
+            winner will be the 'coolest project', but keep an eye out for sub-categories
+            your team could compete in too, or just make a project for fun!`
           },
           {
             title: "Who can attend?",
