@@ -20,6 +20,8 @@ const config: Config = {
         'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
+        'discord': 'var(--discord)',
+        'discord-accent': 'var(--discord-accent)'
       },
     },
   },
