@@ -13,7 +13,7 @@ interface Props {
 
 export const Information: React.FC<Props> = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col min-h-[50%] items-center pt-24" id="info">
+    <div className="relative flex flex-col min-h-[50%] items-center pt-24 px-12" id="info">
       <H2 text="Royal Holloway's Annual Hackathon is Back!"/>
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />

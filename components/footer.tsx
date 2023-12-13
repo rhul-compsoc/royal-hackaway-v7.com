@@ -8,13 +8,14 @@ import compsoc_logo from "@/public/compsoc_logo.png"
 export const Footer = (): JSX.Element => {
   return (
     <footer className="relative bg-white lg:grid lg:grid-cols-5" id="footer">
-      <div className="relative block h-32 lg:col-span-2 lg:h-full">
+      <div className="relative block h-32 lg:col-span-2 lg:h-full mb-16">
         <Image src={logo} alt="logo" placeholder="blur" className="filter brightness-75 w-3/4 mx-auto" />
       </div>
 
       <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
+            <p className="font-medium text-gray-900">CompSoc</p>
             <p className="mt-8 space-y-1 text-sm text-gray-700">
               Made with love by RHUL CompSoc
             </p>
@@ -125,7 +126,7 @@ export const Footer = (): JSX.Element => {
             </div>
 
             <div>
-              <p className="font-medium text-gray-900">CompSoc</p>
+              <p className="font-medium text-gray-900">Hackaway</p>
 
               <ul className="mt-6 space-y-4 text-sm">
               <li>
