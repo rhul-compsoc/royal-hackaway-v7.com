@@ -128,6 +128,12 @@ export const Footer = (): JSX.Element => {
               <p className="font-medium text-gray-900">CompSoc</p>
 
               <ul className="mt-6 space-y-4 text-sm">
+              <li>
+                  <a href="#info" className="text-gray-700 transition hover:opacity-75">
+                    Information
+                  </a>
+                </li>
+
                 <li>
                   <a href="#faq" className="text-gray-700 transition hover:opacity-75">
                     FAQs
