@@ -46,13 +46,13 @@ export default function Home() {
       </div>
 
       <div className="relative w-full h-full bg-white">
-        <Information/>
-        <FAQ/>
-        <Committee/>
-        <Timetable/>
-        <Sponsors/>
+        <Information />
+        <FAQ />
+        <Committee />
+        <Timetable />
+        <Sponsors />
         <Divider />
-        <Footer/>
+        <Footer />
       </div>
     </main>
   );

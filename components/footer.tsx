@@ -3,6 +3,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faXTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Image from "next/image";
 import logo from "@/public/full-logo.png";
+import compsoc_logo from "@/public/compsoc_logo.png"
 
 export const Footer = (): JSX.Element => {
   return (
@@ -14,19 +15,6 @@ export const Footer = (): JSX.Element => {
       <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
-            <p>
-              <span className="text-xs uppercase tracking-wide text-gray-500">
-                Royal
-              </span>
-
-              <a
-                href="#"
-                className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
-              >
-                Hackaway
-              </a>
-            </p>
-
             <p className="mt-8 space-y-1 text-sm text-gray-700">
               Made with love by RHUL CompSoc
             </p>
@@ -129,12 +117,6 @@ export const Footer = (): JSX.Element => {
                 </li>
 
                 <li>
-                  <a href="#sponsors" className="text-gray-700 transition hover:opacity-75">
-                    Sponsors
-                  </a>
-                </li>
-
-                <li>
                   <a href="#info" className="text-gray-700 transition hover:opacity-75">
                     Contact Us
                   </a>
@@ -147,8 +129,8 @@ export const Footer = (): JSX.Element => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#about" target="_blank" className="text-gray-700 transition hover:opacity-75">
-                    About
+                  <a href="#faq" className="text-gray-700 transition hover:opacity-75">
+                    FAQs
                   </a>
                 </li>
 
@@ -161,6 +143,12 @@ export const Footer = (): JSX.Element => {
                 <li>
                   <a href="#schedule" className="text-gray-700 transition hover:opacity-75">
                     Schedule
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#sponsors" className="text-gray-700 transition hover:opacity-75">
+                    Sponsors
                   </a>
                 </li>
               </ul>
