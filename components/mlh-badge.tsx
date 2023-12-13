@@ -15,11 +15,11 @@ export const MLHBadge = (): JSX.Element => {
       href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
       target="_blank"
     >
-    <img
-      src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
-      alt="Major League Hacking 2024 Hackathon Season"
-      style={{ width: '100%' }}
-    />
+      <img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+        alt="Major League Hacking 2024 Hackathon Season"
+        style={{ width: '100%' }}
+      />
     </a>
   );
 };

@@ -8,6 +8,7 @@ import rhsu_logo from "@/public/rhsu_logo_black.webp";
 import rhul_logo from "@/public/royalholloway.webp";
 import rhul_cs_logo from "@/public/cs_department_logo.gif";
 import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
+import mlh_logo from "@/public/mlh_logo.svg";
 
 interface Props {
 
@@ -92,6 +93,11 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               name="Hackathons UK"
               img={hackathons_uk_logo}
               alt="Hackathons UK Logo"
+            />
+            <Sponsor
+              name="MLH"
+              img={mlh_logo}
+              alt="MLH Logo"
             />
           </div>
         </div>
