@@ -34,7 +34,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
       </div>
 
       <p className="w-3/4 text-lg tracking-tight lg:w-1/2 lg:text-xl py-10">
-        Royal Hackaway is Royal Holloway's annual hackathon, open to university students from the UK and around the world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or events, and work together to create the coolest project!
+        Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from the UK and around the world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or events, and work together to create the coolest project!
       </p>
 
       <p className="mt-2 ml-2 mr-2 mb-2">
