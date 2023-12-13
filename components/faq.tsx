@@ -1,12 +1,8 @@
 import { Accordion } from "./accordion";
-import { BigBlink, BigDiscordBlink } from "./blink";
+import { BigDiscordBlink } from "./blink";
 import { H2, H4 } from "./title";
 
-interface Props {
-
-}
-
-export const FAQ: React.FC<Props> = (): JSX.Element => {
+export const FAQ = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center py-24" id="faq">
       <H2 text="Frequently Asked Questions"/>
@@ -62,7 +58,7 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
       <div className="pt-10">
         <H4 text="Got another question?"/>
         <BigDiscordBlink
-          text="Join Our Discord!"
+          text="Join our Discord!"
           href="https://discord.gg/XptvsDZwXc"
           target="_blank"
         />
