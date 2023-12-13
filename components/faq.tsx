@@ -1,11 +1,8 @@
 import { Accordion } from "./accordion";
-import { H2 } from "./title";
+import { BigDiscordBlink } from "./blink";
+import { H2, H4 } from "./title";
 
-interface Props {
-
-}
-
-export const FAQ: React.FC<Props> = (): JSX.Element => {
+export const FAQ = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center py-24" id="faq">
       <H2 text="Frequently Asked Questions"/>
@@ -15,7 +12,7 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
             title: "What is a Hackathon?",
             body: `Hackathons are programming competitions where
             people work in teams to make a project over a 24 hour event. The overall
-            winner will be the &apos;coolest project&apos;, but keep an eye out for sub-categories
+            winner will be the 'coolest project', but keep an eye out for sub-categories
             your team could compete in too, or just make a project for fun!`
           },
           {
@@ -58,6 +55,14 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
           },
         ]}
       />
+      <div className="pt-10">
+        <H4 text="Got another question?"/>
+        <BigDiscordBlink
+          text="Join our Discord!"
+          href="https://discord.gg/XptvsDZwXc"
+          target="_blank"
+        />
+      </div>
     </div>
   );
 };

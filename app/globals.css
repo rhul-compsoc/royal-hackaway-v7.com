@@ -10,6 +10,8 @@
     --primary: #e86a26;
     --secondary: #fff5d6;
     --accent: #cf4307;
+    --discord: #7289DA;
+    --discord-accent: #4682B4;
   }
   .dark {
     --text: #FFFAEB;
@@ -17,6 +19,8 @@
     --primary: #f86c30;
     --secondary: #291f00;
     --accent: #d95b17;
+    --discord: #7289DA;
+    --discord-accent: #4682B4;
   }
 }
 
