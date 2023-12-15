@@ -28,7 +28,7 @@ export const Information: React.FC<Props> = (): JSX.Element => {
       <div className="mt-4 mb-4">
         <BigBlink
           text="Get Tickets!"
-          href=""
+          href="https://pretix.eu/royalhackaway/v7/"
           target="_blank"
         />
       </div>
