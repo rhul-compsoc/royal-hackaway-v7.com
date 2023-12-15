@@ -56,7 +56,7 @@ export const FAQ = (): JSX.Element => {
             body: `If you don't have a team in mind before you come,
             you can make a team when you arrive, so no pressure!
             Just note that team sizes are limited to a maximum
-            of five hackers per team.`
+            of four hackers per team.`
           },
           {
             title: "Who owns my project?",
