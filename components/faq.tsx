@@ -43,7 +43,8 @@ export const FAQ = (): JSX.Element => {
             There will be a quieter hacking room available for individuals or teams who require a calmer space to work,
             where noise must be kept low,
             and you're welcome to skip any events in the main auditorium or workshops if you don't feel comfortable in large or busy spaces.
-            If you have any questions, feel free to message any hackaway staff on our discord server!`
+            If you have any questions, feel free to message any hackaway staff on our discord server!
+            You can also find out more information about the Windsor building here: https://www.accessable.co.uk/venues/windsor-building`
           },
           {
             title: "Do I have to be studying Computer Science?",
