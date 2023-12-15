@@ -37,6 +37,15 @@ export const FAQ = (): JSX.Element => {
             This is for fire safety and accountability reasons.`
           },
           {
+            title: "I have additional requirements or accessibility needs, is the event suitable for me?",
+            body: `The venue is wheelchair accessible and has disabled toilets.
+            There are gender neutral toilets in the library which is next door.
+            There will be a quieter hacking room available for individuals or teams who require a calmer space to work,
+            where noise must be kept low,
+            and you're welcome to skip any events in the main auditorium or workshops if you don't feel comfortable in large or busy spaces.
+            If you have any questions, feel free to message any hackaway staff on our discord server!`
+          },
+          {
             title: "Do I have to be studying Computer Science?",
             body: `Nope! Although doing Computer Science or
             knowing how to code helps, it is not required.`
