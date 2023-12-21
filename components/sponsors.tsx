@@ -8,6 +8,7 @@ import rhsu_logo from "@/public/rhsu_logo_black.webp";
 import rhul_logo from "@/public/royalholloway.webp";
 import rhul_cs_logo from "@/public/cs_department_logo.gif";
 import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
+import ce_logo from "@/public/ce_logo.jpg";
 
 interface Props {
 
@@ -74,6 +75,12 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
                 href="https://github.com/"
               />
             </div>
+            <Sponsor
+              name="CrickleWood Electronics"
+              img={ce_logo}
+              alt="CrickleWood Electronics Logo"
+              href="https://www.cricklewoodelectronics.com/"
+            />
           </div>
         </div>
 
