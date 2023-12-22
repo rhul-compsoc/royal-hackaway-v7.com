@@ -18,10 +18,10 @@ interface Props {
 export const Sponsors: React.FC<Props> = (): JSX.Element => {
   return (
     <div className="mb-10" id="sponsors">
-      <H2 text="Meet our Sponsors!"/>
+      <H2 text="Meet our Sponsors!" />
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
-          <BigBlink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank"/>
+          <BigBlink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank" />
         </div>
       </div>
       <div>
@@ -32,7 +32,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
-          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto`}>
+          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto place-content-center`}>
             <Sponsor
               name="CS Department"
               img={rhul_cs_logo}
@@ -49,7 +49,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Bronze"></H3>
-          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto`}>
+          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto place-content-center`}>
             <Sponsor
               name="BCS"
               img={bcs_logo}
@@ -61,7 +61,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Supporter"></H3>
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto place-content-center">
             <Sponsor
               name="Stand Out Stickers"
               img={stand_out_stickers_logo}
