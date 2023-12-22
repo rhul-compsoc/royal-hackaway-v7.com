@@ -1,11 +1,8 @@
 import { Accordion } from "./accordion";
-import { H2 } from "./title";
+import { BigDiscordBlink } from "./blink";
+import { H2, H4 } from "./title";
 
-interface Props {
-
-}
-
-export const FAQ: React.FC<Props> = (): JSX.Element => {
+export const FAQ = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center py-24" id="faq">
       <H2 text="Frequently Asked Questions"/>
@@ -15,7 +12,7 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
             title: "What is a Hackathon?",
             body: `Hackathons are programming competitions where
             people work in teams to make a project over a 24 hour event. The overall
-            winner will be the &apos;coolest project&apos;, but keep an eye out for sub-categories
+            winner will be the 'coolest project', but keep an eye out for sub-categories
             your team could compete in too, or just make a project for fun!`
           },
           {
@@ -40,6 +37,16 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
             This is for fire safety and accountability reasons.`
           },
           {
+            title: "I have additional requirements or accessibility needs, is the event suitable for me?",
+            body: `The venue is wheelchair accessible and has disabled toilets.
+            There are gender neutral toilets in the library which is next door.
+            There will be a quieter hacking room available for individuals or teams who require a calmer space to work,
+            where noise must be kept low,
+            and you're welcome to skip any events in the main auditorium or workshops if you don't feel comfortable in large or busy spaces.
+            If you have any questions, feel free to message any hackaway staff on our discord server!
+            You can also find out more information about the Windsor building here: https://www.accessable.co.uk/venues/windsor-building`
+          },
+          {
             title: "Do I have to be studying Computer Science?",
             body: `Nope! Although doing Computer Science or
             knowing how to code helps, it is not required.`
@@ -49,7 +56,7 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
             body: `If you don't have a team in mind before you come,
             you can make a team when you arrive, so no pressure!
             Just note that team sizes are limited to a maximum
-            of five hackers per team.`
+            of four hackers per team.`
           },
           {
             title: "Who owns my project?",
@@ -58,6 +65,14 @@ export const FAQ: React.FC<Props> = (): JSX.Element => {
           },
         ]}
       />
+      <div className="pt-10">
+        <H4 text="Got another question?"/>
+        <BigDiscordBlink
+          text="Join our Discord!"
+          href="https://discord.gg/XptvsDZwXc"
+          target="_blank"
+        />
+      </div>
     </div>
   );
 };

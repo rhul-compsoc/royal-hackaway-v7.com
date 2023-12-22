@@ -9,6 +9,7 @@ import rhul_logo from "@/public/royalholloway.webp";
 import rhul_cs_logo from "@/public/cs_department_logo.gif";
 import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
 import mlh_logo from "@/public/mlh_logo.svg";
+import ce_logo from "@/public/ce_logo.jpg";
 
 interface Props {
 
@@ -36,6 +37,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               name="CS Department"
               img={rhul_cs_logo}
               alt="RHUL CS Department Logo"
+              href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/"
             />
           </div>
         </div>
@@ -52,6 +54,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               name="BCS"
               img={bcs_logo}
               alt="BCS Logo"
+              href="https://www.bcs.org/"
             />
           </div>
         </div>
@@ -63,14 +66,22 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               name="Stand Out Stickers"
               img={stand_out_stickers_logo}
               alt="Stand Out Stickers Logo"
+              href="https://www.standoutstickers.com/"
             />
             <div className=" scale-[60%]">
               <Sponsor
                 name="Github"
                 img={github_logo}
                 alt="Github Logo"
+                href="https://github.com/"
               />
             </div>
+            <Sponsor
+              name="CrickleWood Electronics"
+              img={ce_logo}
+              alt="CrickleWood Electronics Logo"
+              href="https://www.cricklewoodelectronics.com/"
+            />
           </div>
         </div>
 
@@ -81,23 +92,27 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               name="RHSU"
               img={rhsu_logo}
               alt="RHSU Logo"
+              href="https://www.su.rhul.ac.uk/"
             />
             <div className="mx-auto">
               <Sponsor
                 name="RHUL"
                 img={rhul_logo}
                 alt="RHUL Logo"
+                href="https://www.royalholloway.ac.uk/"
               />
             </div>
             <Sponsor
               name="Hackathons UK"
               img={hackathons_uk_logo}
               alt="Hackathons UK Logo"
+              href="https://www.hackathons.org.uk/"
             />
             <Sponsor
               name="MLH"
               img={mlh_logo}
               alt="MLH Logo"
+              href="https://mlh.io/"
             />
           </div>
         </div>
