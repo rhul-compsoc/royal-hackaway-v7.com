@@ -14,10 +14,12 @@ import { FAQ } from '@/components/faq';
 import { Information } from '@/components/information';
 import { Timetable } from '@/components/timetable';
 import Divider from '@/components/divider';
+import { MLHBadge } from '@/components/mlh-badge';
 
 export default function Home() {
   return (
     <main>
+      <MLHBadge />
       <div className="absolute h-screen w-full [clip-path:inset(0,0,0,0)] bg-black">
         <div className="fixed w-full h-full left-0 top-0">
           <Image alt="Hackaway Photo"

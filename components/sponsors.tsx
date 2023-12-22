@@ -8,6 +8,7 @@ import rhsu_logo from "@/public/rhsu_logo_black.webp";
 import rhul_logo from "@/public/royalholloway.webp";
 import rhul_cs_logo from "@/public/cs_department_logo.gif";
 import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
+import mlh_logo from "@/public/mlh_logo.svg";
 import ce_logo from "@/public/ce_logo.jpg";
 
 interface Props {
@@ -17,10 +18,10 @@ interface Props {
 export const Sponsors: React.FC<Props> = (): JSX.Element => {
   return (
     <div className="mb-10" id="sponsors">
-      <H2 text="Meet our Sponsors!"/>
+      <H2 text="Meet our Sponsors!" />
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
-          <BigBlink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank"/>
+          <BigBlink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank" />
         </div>
       </div>
       <div>
@@ -31,7 +32,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
-          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto`}>
+          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto place-content-center`}>
             <Sponsor
               name="CS Department"
               img={rhul_cs_logo}
@@ -48,7 +49,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Bronze"></H3>
-          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto`}>
+          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto place-content-center`}>
             <Sponsor
               name="BCS"
               img={bcs_logo}
@@ -60,7 +61,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Supporter"></H3>
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto place-content-center">
             <Sponsor
               name="Stand Out Stickers"
               img={stand_out_stickers_logo}
@@ -106,6 +107,12 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               img={hackathons_uk_logo}
               alt="Hackathons UK Logo"
               href="https://www.hackathons.org.uk/"
+            />
+            <Sponsor
+              name="MLH"
+              img={mlh_logo}
+              alt="MLH Logo"
+              href="https://mlh.io/"
             />
           </div>
         </div>
