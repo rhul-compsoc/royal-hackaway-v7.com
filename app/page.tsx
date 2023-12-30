@@ -3,18 +3,18 @@
 import logo from '@/public/full-logo.png'
 import background from '@/public/hackaway.png'
 
-import { Footer } from "@/components/footer";
-import { CountdownTimer } from "@/components/countdown";
+import { Footer } from "@/components/ui/footer";
+import { CountdownTimer } from "@/components/ui/countdown";
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Sponsors } from '@/components/sponsors';
-import { Committee } from '@/components/committee';
-import { FAQ } from '@/components/faq';
-import { Information } from '@/components/information';
-import { Timetable } from '@/components/timetable';
-import Divider from '@/components/divider';
-import { MLHBadge } from '@/components/mlh-badge';
+import { Sponsors } from '@/components/ui/sponsors';
+import { Committee } from '@/components/ui/committee';
+import { FAQ } from '@/components/ui/faq';
+import { Information } from '@/components/ui/information';
+import { Timetable } from '@/components/ui/timetable';
+import Divider from '@/components/ui/divider';
+import { MLHBadge } from '@/components/ui/mlh-badge';
 
 export default function Home() {
   return (

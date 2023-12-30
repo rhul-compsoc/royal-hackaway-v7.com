@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.badge {
+  z-index: 999;
+  width: 100px;
+  position: absolute;
+  right: 2em;
+  top: 0;
+
+  @include media-breakpoint-down(lg) {
+    width: 80px;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 60px;
+    right: 15px;
+  }
+}

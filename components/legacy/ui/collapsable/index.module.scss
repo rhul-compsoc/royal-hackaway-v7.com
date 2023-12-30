@@ -1,0 +1,43 @@
+@import "_config";
+
+.collapsable {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  text-align: left !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+}
+
+.labelContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  padding: 0.75em 1.5em;
+}
+
+.arrowDown {
+  transition: transform 0.3s;
+
+  svg {
+    display: block;
+  }
+
+  &.arrowUp {
+    transform: rotate(180deg);
+  }
+}
+
+.container {
+  transition: height 0.3s;
+  overflow: hidden;
+  padding: 0 1.5em;
+}
+
+.content {
+  border-top: solid;
+  padding: 0.75em 1.5em 0 1.5em;
+}

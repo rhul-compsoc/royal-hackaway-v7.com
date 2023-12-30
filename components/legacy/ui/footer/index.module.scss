@@ -1,0 +1,23 @@
+@import "_config";
+
+.logo {
+  width: 80%;
+  margin: 1em 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .footerContent {
+    margin: 0.8em 0 1em 0;
+    text-align: center;
+  }
+}

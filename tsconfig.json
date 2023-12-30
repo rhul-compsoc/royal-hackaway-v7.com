@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/legacy/ui/event-context/index.jsx", "components/legacy/ui/contact/index.jsx", "components/legacy/ui/collapsable/index.tsx"],
   "exclude": ["node_modules"]
 }
