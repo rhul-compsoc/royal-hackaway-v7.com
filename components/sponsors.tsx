@@ -66,7 +66,7 @@ export const Sponsors: React.FC<Props> = (): JSX.Element => {
               name="Stand Out Stickers"
               img={stand_out_stickers_logo}
               alt="Stand Out Stickers Logo"
-              href="https://www.standoutstickers.com/"
+              href="http://hackp.ac/mlh-StandOutStickers-hackathons"
             />
             <div className=" scale-[60%]">
               <Sponsor
