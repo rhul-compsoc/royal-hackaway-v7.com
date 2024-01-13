@@ -40,7 +40,7 @@ const day1Events = [
 ];
 
 const day2Events = [
-  { time: "08:00", title: "Breakfast" },
+  { time: "8:00", title: "Breakfast" },
   { time: "12:30", title: "🛑 Hacking ends 🛑" },
   {
     title: "Start presentations",
@@ -62,7 +62,16 @@ const day2Events = [
   },
   { time: "16:00", title: "Closing Ceremony" },
   { title: "🏆 Winners announced 🏆" },
-  { time: "18:00 (approx)", title: "End of Hackathon" },
+  {
+    time: (
+      <span>
+        18:00
+        <br />
+        (approx)
+      </span>
+    ),
+    title: "End of Hackathon",
+  },
 ];
 
 export const Timetable: React.FC<Props> = (): JSX.Element => {

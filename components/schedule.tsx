@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export interface Event {
-  time?: string;
+  time?: ReactNode;
   title: string;
   description?: ReactNode;
 }
