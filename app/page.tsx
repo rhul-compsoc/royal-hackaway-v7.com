@@ -13,7 +13,7 @@ import { Committee } from '@/components/committee';
 import { FAQ } from '@/components/faq';
 import { Information } from '@/components/information';
 import { Timetable } from '@/components/timetable';
-import Divider from '@/components/divider';
+import { Divider } from '@/components/divider';
 import { MLHBadge } from '@/components/mlh-badge';
 
 export default function Home() {
