@@ -1,24 +1,29 @@
+import { ReactNode } from "react";
+
 export interface Event {
-  time: string;
+  time?: string;
   title: string;
-  description: string;
+  description?: ReactNode;
 }
 
 interface Props {
+  day: string;
   events: Event[];
 }
 
-export const Schedule: React.FC<Props> = ({ events }): JSX.Element => {
- return (
+export const Schedule: React.FC<Props> = ({ day, events }): JSX.Element => {
+  return (
     <div className="overflow-x-auto rounded-lg border border-gray-200">
       <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
         <thead className="ltr:text-left rtl:text-right font-bold">
           <tr>
-            <th className="whitespace-nowrap px-4 py-2 text-gray-900">
-              Time
-            </th>
-            <th className="whitespace-nowrap px-4 py-2 text-gray-900">
-              Event
+            <th
+              colSpan={2}
+              className="whitespace-nowrap px-4 py-2 text-gray-900"
+            >
+              <strong>
+                <u>{day}</u>
+              </strong>
             </th>
           </tr>
         </thead>
@@ -41,5 +46,5 @@ export const Schedule: React.FC<Props> = ({ events }): JSX.Element => {
         </tbody>
       </table>
     </div>
- );
-}
+  );
+};
