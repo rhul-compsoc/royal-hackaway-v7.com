@@ -1,5 +1,5 @@
-import { Card } from "./card";
-import { H2 } from "./title";
+import { Card } from "../ui/card";
+import { H2 } from "../ui/title";
 import zak from "@/public/zak.png"
 import sinan from "@/public/sinan.png"
 import joseph from "@/public/joseph.jpg"

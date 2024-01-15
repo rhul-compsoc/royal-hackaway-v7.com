@@ -1,6 +1,6 @@
-import { Accordion } from "./accordion";
-import { BigDiscordBlink } from "./blink";
-import { H2, H4 } from "./title";
+import { Accordion } from "../ui/accordion";
+import { BigDiscordBlink } from "../ui/blink";
+import { H2, H4 } from "../ui/title";
 
 export const FAQ = (): JSX.Element => {
   return (

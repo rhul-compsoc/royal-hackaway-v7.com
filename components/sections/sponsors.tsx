@@ -1,6 +1,6 @@
-import { BigBlink, Blink } from "./blink";
-import { Sponsor } from "./sponsor";
-import { H2, H3, H4 } from "./title";
+import { BigBlink, Blink } from "../ui/blink";
+import { Sponsor } from "../ui/sponsor";
+import { H2, H3, H4 } from "../ui/title";
 import stand_out_stickers_logo from "@/public/stand_out_stickers_logo.svg";
 import github_logo from "@/public/github_logo.svg";
 import bcs_logo from "@/public/bcs_logo.svg";
@@ -11,11 +11,7 @@ import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
 import mlh_logo from "@/public/mlh_logo.svg";
 import ce_logo from "@/public/ce_logo.jpg";
 
-interface Props {
-
-}
-
-export const Sponsors: React.FC<Props> = (): JSX.Element => {
+export const Sponsors = (): JSX.Element => {
   return (
     <div className="mb-10" id="sponsors">
       <H2 text="Meet our Sponsors!" />

@@ -28,10 +28,10 @@ export const Schedule: React.FC<Props> = ({ day, events }): JSX.Element => {
           </tr>
         </thead>
 
-        <tbody className="divide-y text-center divide-gray-200">
+        <tbody className="divide-y divide-gray-200">
           {events.map((event, index) => (
             <tr key={index}>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              <td className="whitespace-nowrap text-center px-4 py-2 font-medium text-gray-900">
                 {event.time}
               </td>
               <td className="px-4 py-2 text-gray-700">
