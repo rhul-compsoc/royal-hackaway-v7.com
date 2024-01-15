@@ -1,17 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { H2 } from "./title";
+import { H2 } from "../ui/title";
 import { faCalendar, faMap } from "@fortawesome/free-regular-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faMapPin } from "@fortawesome/free-solid-svg-icons";
-import { Map } from "./map";
-import { BigBlink, DiscordBlink } from "./blink";
+import { Map } from "../ui/map";
+import { BigBlink, DiscordBlink } from "../ui/blink";
 import Link from "next/link";
 
-interface Props {
-
-}
-
-export const Information: React.FC<Props> = (): JSX.Element => {
+export const Information = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center pt-24 px-12" id="info">
       <H2 text="Royal Holloway's Annual Hackathon is Back!"/>

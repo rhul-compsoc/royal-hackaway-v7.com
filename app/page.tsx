@@ -2,19 +2,18 @@
 
 import logo from '@/public/full-logo.png'
 import background from '@/public/hackaway.png'
-
-import { Footer } from "@/components/footer";
-import { CountdownTimer } from "@/components/countdown";
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Sponsors } from '@/components/sponsors';
-import { Committee } from '@/components/committee';
-import { FAQ } from '@/components/faq';
-import { Information } from '@/components/information';
-import { Timetable } from '@/components/timetable';
-import { Divider } from '@/components/divider';
-import { MLHBadge } from '@/components/mlh-badge';
+import { Footer } from "@/components/sections/footer";
+import { CountdownTimer } from "@/components/sections/countdown";
+import { Sponsors } from '@/components/sections/sponsors';
+import { Committee } from '@/components/sections/committee';
+import { FAQ } from '@/components/sections/faq';
+import { Information } from '@/components/sections/information';
+import { Timetable } from '@/components/sections/timetable';
+import { Divider } from '@/components/ui/divider';
+import { MLHBadge } from '@/components/ui/mlh-badge';
 
 export default function Home() {
   return (

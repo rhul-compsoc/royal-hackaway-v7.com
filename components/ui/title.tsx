@@ -26,6 +26,15 @@ export const H4: React.FC<Props> = ({ text }): JSX.Element => {
   );
 };
 
+export const H5: React.FC<Props> = ({ text }): JSX.Element => {
+  return (
+    <h5 className="text-center mb-6 mt-6 text-xl font-medium tracking-tight text-text-black sm:text-3xl">
+      {text}
+    </h5>
+  );
+};
+
+
 export const H6: React.FC<Props> = ({ text }): JSX.Element => {
   return (
     <h6 className="text-center mb-6 mt-6 text-xl font-medium tracking-tight text-text-black sm:text-2xl">
