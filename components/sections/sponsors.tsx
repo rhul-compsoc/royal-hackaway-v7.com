@@ -10,6 +10,7 @@ import rhul_cs_logo from "@/public/cs_department_logo.gif";
 import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
 import mlh_logo from "@/public/mlh_logo.svg";
 import ce_logo from "@/public/ce_logo.jpg";
+import isg_logo from "@/public/isg_logo.webp";
 
 export const Sponsors = (): JSX.Element => {
   return (
@@ -63,6 +64,13 @@ export const Sponsors = (): JSX.Element => {
               img={bcs_logo}
               alt="BCS Logo"
               href="https://www.bcs.org/"
+            />
+
+            <Sponsor
+              name="ISG Department"
+              img={isg_logo}
+              alt="RHUL ISG Department Logo"
+              href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/information-security/"
             />
           </div>
         </div>
