@@ -30,16 +30,79 @@ export const Timetable = (): JSX.Element => {
       title: "Lunch",
     },
     {
-      title: "*Mini events TBC*",
+      time: "14:00",
+      title: (
+        <span>
+          GitHub Copilot Workshop with{" "}
+          <a style={{ color: "blue" }} href="https://mlh.io">
+            MLH
+          </a>
+        </span>
+      ),
     },
     {
-      time: "19:30",
+      time: "15:00",
+      title: (
+        <span>
+          Embedded Programming Workshop with{" "}
+          <a href="https://linktr.ee/makerssoc" style={{ color: "blue" }}>
+            RHUL Makers' Society
+          </a>
+        </span>
+      ),
+    },
+    { time: "16:00", title: "Symbolic AI: Declarative Programming with PDDL" },
+    { time: "17:00", title: "Wikipedia Races (MLH)" },
+    {
+      time: "18:00",
+      title: (
+        <span>
+          Cup Stacking (
+          <a href="https://www.hackathons.org.uk/" style={{ color: "blue" }}>
+            HackathonsUK)
+          </a>
+        </span>
+      ),
+    },
+    {
+      time: "19:00",
       title: "Dinner (Pizza) 🍕",
+    },
+    {
+      time: "20:00",
+      title: "Taskmaster (ft. Prof. Dave Cohen)",
+      description: (
+        <span>
+          Taskmaster Compete in teams to perform a series of bizzare tasks. (As
+          seen on TV!)
+          <br />
+          This year we're featuring the legendary Dave Cohen as our Taskmaster!
+        </span>
+      ),
+    },
+    { time: "21:00", title: "Pub Quiz 🍺" },
+    {
+      time: "22:00",
+      title: "Carrot in a Box 🥕📦❓",
+      description:
+        "A game of wits and bluffing to see if you can trick the other person into getting the carrot within your box.",
     },
   ];
 
   const dayTwoEvents = [
+    {
+      time: "0:00",
+      title: "PowerPoint™ Karaoke",
+      description:
+        "Deliver improvised Microsoft™ PowerPoint™ presentations with slides you've never seen before!",
+    },
+    { time: "5:00", title: "Delirious Debugging" },
     { time: "8:00", title: "Breakfast" },
+    {
+      time: "10:00",
+      title: "🏓 Last Minute Table Tennis 🏓",
+      description: "Relax and decompress with some table tennis!",
+    },
     { time: "12:30", title: "🛑 Hacking ends 🛑" },
     {
       title: "Start presentations",
@@ -85,7 +148,11 @@ export const Timetable = (): JSX.Element => {
           <Schedule day="Sunday 28th - Day 2" events={dayTwoEvents} />
         </div>
       }
-      <H6 text={"Mini events TBC soon!"}></H6>
+      <H6
+        text={
+          "Timetable for reference only, times may change slightly during event"
+        }
+      ></H6>
     </div>
   );
 };
