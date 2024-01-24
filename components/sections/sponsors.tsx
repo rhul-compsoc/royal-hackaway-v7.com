@@ -11,6 +11,7 @@ import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
 import mlh_logo from "@/public/mlh_logo.svg";
 import ce_logo from "@/public/ce_logo.jpg";
 import isg_logo from "@/public/isg_logo.webp";
+import makers_logo from "@/public/makers_logo.png";
 
 export const Sponsors = (): JSX.Element => {
   return (
@@ -95,6 +96,13 @@ export const Sponsors = (): JSX.Element => {
               img={ce_logo}
               alt="CrickleWood Electronics Logo"
               href="https://www.cricklewoodelectronics.com/"
+            />
+
+            <Sponsor
+              name="Royal Holloway Makers' Society"
+              img={makers_logo}
+              alt="Royal Holloway Makers' Society Logo"
+              href="https://linktr.ee/makerssoc"
             />
           </div>
         </div>
