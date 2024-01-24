@@ -118,8 +118,12 @@ export const Timetable = (): JSX.Element => {
     {
       time: "14:00",
       title: "🎪 Project Fair 🎪",
-      description:
-        "Show off your project in a 'Science Fair'-esque like display to all the judges and volunteers that come around!",
+      description: (
+        <span>
+          Show off your project in a "Science Fair"-esque like display to all
+          the judges and volunteers that come around!
+        </span>
+      ),
     },
     {
       time: "15:30",
