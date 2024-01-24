@@ -59,8 +59,9 @@ export const Timetable = (): JSX.Element => {
         <>
           Cup Stacking (
           <a href="https://www.hackathons.org.uk/" style={{ color: "blue" }}>
-            HackathonsUK)
+            HackathonsUK
           </a>
+          )
         </>
       ),
     },
