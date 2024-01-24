@@ -1,7 +1,7 @@
 import { BigBlink, Blink } from "../ui/blink";
 import { Sponsor } from "../ui/sponsor";
 import { H2, H3, H4 } from "../ui/title";
-import stand_out_stickers_logo from "@/public/stand_out_stickers_logo.svg";
+import redbull_logo from "@/public/redbull_logo.svg";
 import github_logo from "@/public/github_logo.svg";
 import bcs_logo from "@/public/bcs_logo.svg";
 import rhsu_logo from "@/public/rhsu_logo_black.webp";
@@ -17,7 +17,11 @@ export const Sponsors = (): JSX.Element => {
       <H2 text="Meet our Sponsors!" />
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
-          <BigBlink text="Become a sponsor!" href="https://royalhackawayv7.tiiny.site/" target="_blank" />
+          <BigBlink
+            text="Become a sponsor!"
+            href="https://royalhackawayv7.tiiny.site/"
+            target="_blank"
+          />
         </div>
       </div>
       <div>
@@ -28,7 +32,11 @@ export const Sponsors = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
-          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto place-content-center`}>
+          <div
+            className={`grid ${
+              true ? "justify-center" : "grid-cols-1 lg:grid-cols-3"
+            } gap-4 lg:gap-8 mx-auto place-content-center`}
+          >
             <Sponsor
               name="CS Department"
               img={rhul_cs_logo}
@@ -45,7 +53,11 @@ export const Sponsors = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Bronze"></H3>
-          <div className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'} gap-4 lg:gap-8 mx-auto place-content-center`}>
+          <div
+            className={`grid ${
+              true ? "justify-center" : "grid-cols-1 lg:grid-cols-3"
+            } gap-4 lg:gap-8 mx-auto place-content-center`}
+          >
             <Sponsor
               name="BCS"
               img={bcs_logo}
@@ -59,10 +71,10 @@ export const Sponsors = (): JSX.Element => {
           <H3 text="Supporter"></H3>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto place-content-center">
             <Sponsor
-              name="Stand Out Stickers"
-              img={stand_out_stickers_logo}
-              alt="Stand Out Stickers Logo"
-              href="http://hackp.ac/mlh-StandOutStickers-hackathons"
+              name="Red Bull"
+              img={redbull_logo}
+              alt="Red Bull Logo"
+              href="https://www.redbull.com/"
             />
             <div className=" scale-[60%]">
               <Sponsor

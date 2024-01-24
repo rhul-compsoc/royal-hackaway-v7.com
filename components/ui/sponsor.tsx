@@ -8,15 +8,16 @@ interface Props {
   href: string;
 }
 
-export const Sponsor: React.FC<Props> = ({ name, img, alt, href }): JSX.Element => {
+export const Sponsor: React.FC<Props> = ({
+  name,
+  img,
+  alt,
+  href,
+}): JSX.Element => {
   return (
     <div>
       <Link href={href} target="_blank">
-        <Image
-        alt={alt}
-        src={img}
-        className="h-32 w-auto object-fit"
-        />
+        <Image alt={alt} src={img} className="h-32 w-auto object-fit" />
       </Link>
     </div>
   );
