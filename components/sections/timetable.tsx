@@ -102,7 +102,9 @@ export const Timetable = (): JSX.Element => {
       time: "10:00",
       title: (
         <>
-          🏓 Last Minute Table Tennis 🏓
+          <span title="compsoc table tennis social when">
+            🏓 Last Minute Table Tennis 🏓
+          </span>
           <span style={{ color: "white" }}>hi royce</span>
         </>
       ),
