@@ -7,11 +7,11 @@ export const Timetable = (): JSX.Element => {
       time: "8:30",
       title: "Registration",
       description: (
-        <span>
+        <>
           Open doors to hackers!
           <br />
           Bring along your tickets and laptops.
-        </span>
+        </>
       ),
     },
     {
@@ -32,23 +32,23 @@ export const Timetable = (): JSX.Element => {
     {
       time: "14:00",
       title: (
-        <span>
+        <>
           GitHub Copilot Workshop with{" "}
           <a style={{ color: "blue" }} href="https://mlh.io">
             MLH
           </a>
-        </span>
+        </>
       ),
     },
     {
       time: "15:00",
       title: (
-        <span>
+        <>
           Embedded Programming Workshop with{" "}
           <a href="https://linktr.ee/makerssoc" style={{ color: "blue" }}>
-            RHUL Makers' Society
+            RHUL Makers&apos; Society
           </a>
-        </span>
+        </>
       ),
     },
     { time: "16:00", title: "Symbolic AI: Declarative Programming with PDDL" },
@@ -56,12 +56,12 @@ export const Timetable = (): JSX.Element => {
     {
       time: "18:00",
       title: (
-        <span>
+        <>
           Cup Stacking (
           <a href="https://www.hackathons.org.uk/" style={{ color: "blue" }}>
             HackathonsUK)
           </a>
-        </span>
+        </>
       ),
     },
     {
@@ -72,12 +72,13 @@ export const Timetable = (): JSX.Element => {
       time: "20:00",
       title: "Taskmaster (ft. Prof. Dave Cohen)",
       description: (
-        <span>
+        <>
           Taskmaster Compete in teams to perform a series of bizzare tasks. (As
           seen on TV!)
           <br />
-          This year we're featuring the legendary Dave Cohen as our Taskmaster!
-        </span>
+          This year we&apos;re featuring the legendary Dave Cohen as our
+          Taskmaster!
+        </>
       ),
     },
     { time: "21:00", title: "Pub Quiz 🍺" },
@@ -94,7 +95,7 @@ export const Timetable = (): JSX.Element => {
       time: "0:00",
       title: "PowerPoint™ Karaoke",
       description:
-        "Deliver improvised Microsoft™ PowerPoint™ presentations with slides you've never seen before!",
+        "Deliver improvised Microsoft™ PowerPoint™ presentations with slides you&apos;ve never seen before!",
     },
     { time: "5:00", title: "Delirious Debugging" },
     { time: "8:00", title: "Breakfast" },
@@ -119,27 +120,31 @@ export const Timetable = (): JSX.Element => {
       time: "14:00",
       title: "🎪 Project Fair 🎪",
       description: (
-        <span>
-          Show off your project in a "Science Fair"-esque like display to all
-          the judges and volunteers that come around!
-        </span>
+        <>
+          Show off your project in a &quot;Science Fair&quot;-esque like display
+          to all the judges and volunteers that come around!
+        </>
       ),
     },
     {
       time: "15:30",
       title: "🧹 Cleanup Time 🗑️",
-      description:
-        "Clean up, tidy up, pack up - We're about to decide who wins Royal Hackaway!",
+      description: (
+        <>
+          Clean up, tidy up, pack up - We&apos;re about to decide who wins Royal
+          Hackaway!
+        </>
+      ),
     },
     { time: "16:00", title: "Closing Ceremony" },
     { title: "🏆 Winners announced 🏆" },
     {
       time: (
-        <span>
+        <>
           18:00
           <br />
           (approx)
-        </span>
+        </>
       ),
       title: "End of Hackathon",
     },
