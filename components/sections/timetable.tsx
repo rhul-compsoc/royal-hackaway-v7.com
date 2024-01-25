@@ -26,6 +26,21 @@ export const Timetable = (): JSX.Element => {
       title: "Team Building",
     },
     {
+      time: "12:00",
+      title: (
+        <>
+          Sociable Code Workshop with{" "}
+          <a
+            style={{ color: "blue" }}
+            target="_blank"
+            href="https://www.hackathons.org.uk/"
+          >
+            HackathonsUK
+          </a>
+        </>
+      ),
+    },
+    {
       time: "13:00",
       title: "Lunch",
     },
@@ -34,7 +49,7 @@ export const Timetable = (): JSX.Element => {
       title: (
         <>
           GitHub Copilot Workshop with{" "}
-          <a style={{ color: "blue" }} href="https://mlh.io">
+          <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
             MLH
           </a>
         </>
@@ -45,20 +60,39 @@ export const Timetable = (): JSX.Element => {
       title: (
         <>
           Embedded Programming Workshop with{" "}
-          <a href="https://linktr.ee/makerssoc" style={{ color: "blue" }}>
+          <a
+            href="https://linktr.ee/makerssoc"
+            target="_blank"
+            style={{ color: "blue" }}
+          >
             RHUL Makers&apos; Society
           </a>
         </>
       ),
     },
     { time: "16:00", title: "Symbolic AI: Declarative Programming with PDDL" },
-    { time: "17:00", title: "Wikipedia Races (MLH)" },
+    {
+      time: "17:00",
+      title: (
+        <>
+          Wikipedia Races (
+          <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
+            MLH
+          </a>
+          )
+        </>
+      ),
+    },
     {
       time: "18:00",
       title: (
         <>
           Cup Stacking (
-          <a href="https://www.hackathons.org.uk/" style={{ color: "blue" }}>
+          <a
+            href="https://www.hackathons.org.uk/"
+            target="_blank"
+            style={{ color: "blue" }}
+          >
             HackathonsUK
           </a>
           )
