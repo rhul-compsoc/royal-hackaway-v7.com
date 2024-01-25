@@ -130,8 +130,12 @@ export const Timetable = (): JSX.Element => {
     {
       time: "0:00",
       title: "PowerPoint™ Karaoke",
-      description:
-        "Deliver improvised Microsoft™ PowerPoint™ presentations with slides you&apos;ve never seen before!",
+      description: (
+        <>
+          Deliver improvised Microsoft™ PowerPoint™ presentations with slides
+          you&apos;ve never seen before!
+        </>
+      ),
     },
     { time: "5:00", title: "Delirious Debugging" },
     { time: "8:00", title: "Breakfast" },
