@@ -69,6 +69,7 @@ export const Timetable = (): JSX.Element => {
           </a>
         </>
       ),
+      description: "Learn how to program microcontrollers with Arduino!",
     },
     { time: "16:00", title: "Symbolic AI: Declarative Programming with PDDL" },
     {
