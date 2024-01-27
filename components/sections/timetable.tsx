@@ -105,7 +105,7 @@ export const Timetable = (): JSX.Element => {
     },
     {
       time: "19:00",
-      title: "Dinner (Pizza) 🍕",
+      title: <>Dinner (Pizza) 🍕</>,
     },
     {
       time: "20:00",
