@@ -42,10 +42,6 @@ export const Timetable = (): JSX.Element => {
     },
     {
       time: "13:00",
-      title: "Lunch",
-    },
-    {
-      time: "14:00",
       title: (
         <>
           GitHub Copilot Workshop with{" "}
@@ -54,6 +50,10 @@ export const Timetable = (): JSX.Element => {
           </a>
         </>
       ),
+    },
+    {
+      time: "14:00",
+      title: "Lunch",
     },
     {
       time: "15:00",
