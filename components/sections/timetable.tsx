@@ -78,19 +78,19 @@ export const Timetable = (): JSX.Element => {
     {
       time: "17:00",
       title: (
-        <>
+        <s>
           Wikipedia Races (
           <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
             MLH
           </a>
           )
-        </>
+        </s>
       ),
     },
     {
       time: "18:00",
       title: (
-        <>
+        <s>
           Cup Stacking (
           <a
             href="https://www.hackathons.org.uk/"
@@ -100,7 +100,7 @@ export const Timetable = (): JSX.Element => {
             HackathonsUK
           </a>
           )
-        </>
+        </s>
       ),
     },
     {
