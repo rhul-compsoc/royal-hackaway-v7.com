@@ -53,12 +53,12 @@ export const Timetable = (): JSX.Element => {
     },
     {
       time: "14:00",
-      title: "Lunch",
+      title: <s>Lunch</s>,
     },
     {
       time: "15:00",
       title: (
-        <>
+        <s>
           Embedded Programming Workshop with{" "}
           <a
             href="https://linktr.ee/makerssoc"
@@ -67,11 +67,14 @@ export const Timetable = (): JSX.Element => {
           >
             RHUL Makers&apos; Society
           </a>
-        </>
+        </s>
       ),
       description: "Learn how to program microcontrollers with Arduino!",
     },
-    { time: "16:00", title: "Symbolic AI: Declarative Programming with PDDL" },
+    {
+      time: "16:00",
+      title: <s>Symbolic AI: Declarative Programming with PDDL</s>,
+    },
     {
       time: "17:00",
       title: (
