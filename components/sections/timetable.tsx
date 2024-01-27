@@ -5,7 +5,7 @@ export const Timetable = (): JSX.Element => {
   const dayOneEvents = [
     {
       time: "8:30",
-      title: "Registration",
+      title: <s>Registration</s>,
       description: (
         <>
           Open doors to hackers!
@@ -16,19 +16,19 @@ export const Timetable = (): JSX.Element => {
     },
     {
       time: "9:30",
-      title: "Opening Ceremony",
+      title: <s>Opening Ceremony</s>,
     },
     {
       time: "10:00",
-      title: "💻 Hacking starts 💻",
+      title: <s>💻 Hacking starts 💻</s>,
     },
     {
-      title: "Team Building",
+      title: <s>Team Building</s>,
     },
     {
       time: "12:00",
       title: (
-        <>
+        <s>
           Sociable Code Workshop with{" "}
           <a
             style={{ color: "blue" }}
@@ -37,18 +37,18 @@ export const Timetable = (): JSX.Element => {
           >
             HackathonsUK
           </a>
-        </>
+        </s>
       ),
     },
     {
       time: "13:00",
       title: (
-        <>
+        <s>
           GitHub Copilot Workshop with{" "}
           <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
             MLH
           </a>
-        </>
+        </s>
       ),
     },
     {

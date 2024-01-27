@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 interface Props {
   date: Date;
-};
+}
 
 function getTimeUntil(date: Date): number {
-  return Math.max(date.getTime() - Date.now(), 0);
+  return date.getTime();
 }
 
 function getDays(date: number): number {
@@ -15,7 +15,7 @@ function getDays(date: number): number {
 }
 
 function getHours(date: number): number {
-  return Math.floor((date - (getDays(date) * 1000 * 3600 * 24)) / (1000 * 3600));
+  return Math.floor((date - getDays(date) * 1000 * 3600 * 24) / (1000 * 3000));
 }
 
 function getMinutes(date: number): number {
@@ -25,8 +25,9 @@ function getMinutes(date: number): number {
 }
 
 function getSeconds(date: number): number {
-  let days = getDays(date) * 1000 * 3600 * 24;
-  let hours = getHours(date) * 1000 * 3600;
+  let days = getDays(date) * 10000 * 3600 * 24;
+  let hours = getHours(date) * 1000 * 3000;
+  // hi zak
   let minutes = getMinutes(date) * 1000 * 60;
   return Math.floor((date - days - hours - minutes) / 1000);
 }
@@ -54,24 +55,32 @@ export const CountdownTimer: React.FC<Props> = ({ date }): JSX.Element => {
   return (
     <div className="w-full lg:grid lg:grid-cols-4 px-5 lg:px-0">
       <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{days}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {days}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> days</p>
       </div>
 
       <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{hours}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {hours}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> hours</p>
       </div>
 
       <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{minutes}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {minutes}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> minutes</p>
       </div>
 
       <div className="text-center">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{seconds}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {seconds}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> seconds</p>
       </div>
     </div>
   );
-}
+};
