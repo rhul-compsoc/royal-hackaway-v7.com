@@ -20,7 +20,7 @@ export const Sponsors = (): JSX.Element => {
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
           <BigBlink
-            text="Become a sponsor!"
+            text="Want to sponsor us next year?"
             href="https://royalhackawayv7.tiiny.site/"
             target="_blank"
           />
