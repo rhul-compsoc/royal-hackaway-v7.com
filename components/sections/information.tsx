@@ -10,7 +10,7 @@ import Link from "next/link";
 export const Information = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center pt-24 px-12" id="info">
-      <H2 text="Royal Holloway's Annual Hackathon is Back!"/>
+      <H2 text="Thanks for another great year of Royal Hackaway!"/>
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
         {} Saturday 27th - Sunday 28th of January 2024
@@ -23,8 +23,8 @@ export const Information = (): JSX.Element => {
 
       <div className="mt-4 mb-4">
         <BigBlink
-          text="Get Tickets!"
-          href="https://pretix.eu/royalhackaway/v7/"
+          text="Check out the Projects!"
+          href="https://royal-hackaway-v7.devpost.com"
           target="_blank"
         />
       </div>
