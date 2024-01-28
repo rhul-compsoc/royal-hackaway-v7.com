@@ -5,7 +5,7 @@ export const Timetable = (): JSX.Element => {
   const dayOneEvents = [
     {
       time: "8:30",
-      title: <s>Registration</s>,
+      title: <>Registration</>,
       description: (
         <>
           Open doors to hackers!
@@ -16,19 +16,19 @@ export const Timetable = (): JSX.Element => {
     },
     {
       time: "9:30",
-      title: <s>Opening Ceremony</s>,
+      title: <>Opening Ceremony</>,
     },
     {
       time: "10:00",
-      title: <s>💻 Hacking starts 💻</s>,
+      title: <>💻 Hacking starts 💻</>,
     },
     {
-      title: <s>Team Building</s>,
+      title: <>Team Building</>,
     },
     {
       time: "12:00",
       title: (
-        <s>
+        <>
           Sociable Code Workshop with{" "}
           <a
             style={{ color: "blue" }}
@@ -37,28 +37,28 @@ export const Timetable = (): JSX.Element => {
           >
             HackathonsUK
           </a>
-        </s>
+        </>
       ),
     },
     {
       time: "13:00",
       title: (
-        <s>
+        <>
           GitHub Copilot Workshop with{" "}
           <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
             MLH
           </a>
-        </s>
+        </>
       ),
     },
     {
       time: "14:00",
-      title: <s>Lunch</s>,
+      title: <>Lunch</>,
     },
     {
       time: "15:00",
       title: (
-        <s>
+        <>
           Embedded Programming Workshop with{" "}
           <a
             href="https://linktr.ee/makerssoc"
@@ -67,30 +67,30 @@ export const Timetable = (): JSX.Element => {
           >
             RHUL Makers&apos; Society
           </a>
-        </s>
+        </>
       ),
       description: "Learn how to program microcontrollers with Arduino!",
     },
     {
       time: "16:00",
-      title: <s>Symbolic AI: Declarative Programming with PDDL</s>,
+      title: <>Symbolic AI: Declarative Programming with PDDL</>,
     },
     {
       time: "17:00",
       title: (
-        <s>
+        <>
           Wikipedia Races (
           <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
             MLH
           </a>
           )
-        </s>
+        </>
       ),
     },
     {
       time: "18:00",
       title: (
-        <s>
+        <>
           Cup Stacking (
           <a
             href="https://www.hackathons.org.uk/"
@@ -100,7 +100,7 @@ export const Timetable = (): JSX.Element => {
             HackathonsUK
           </a>
           )
-        </s>
+        </>
       ),
     },
     {
@@ -205,11 +205,6 @@ export const Timetable = (): JSX.Element => {
           <Schedule day="Sunday 28th - Day 2" events={dayTwoEvents} />
         </div>
       }
-      <H6
-        text={
-          "Timetable for reference only, times may change slightly during event"
-        }
-      ></H6>
     </div>
   );
 };
