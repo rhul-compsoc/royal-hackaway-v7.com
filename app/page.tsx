@@ -6,7 +6,6 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Footer } from "@/components/sections/footer";
-import { CountdownTimer } from "@/components/sections/countdown";
 import { Sponsors } from "@/components/sections/sponsors";
 import { Committee } from "@/components/sections/committee";
 import { FAQ } from "@/components/sections/faq";
@@ -14,6 +13,7 @@ import { Information } from "@/components/sections/information";
 import { Timetable } from "@/components/sections/timetable";
 import { Divider } from "@/components/ui/divider";
 import { MLHBadge } from "@/components/ui/mlh-badge";
+import { PostStats } from "@/components/sections/post-stats";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="w-full blur-none mt-5 sm:mt-10 mb-20 lg:mb-10">
           <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-3xl">
-            <CountdownTimer date={new Date(2024, 0, 27, 10)} />
+            <PostStats />
           </div>
         </div>
         <div className="h-full w-full mt-5 sm:mt-10 lg:mt-32 block md:hidden lg:block text-sm lg:text-3xl">
