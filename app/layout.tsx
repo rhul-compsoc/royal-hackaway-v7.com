@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { config } from "@fortawesome/fontawesome-svg-core";
+import { config } from '@fortawesome/fontawesome-svg-core';
 import localFont from 'next/font/local';
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import './globals.css';
 
 const kollektif = localFont({ src: './fonts/Kollektif.ttf' });
@@ -15,9 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <body className={kollektif.className}>
-        {children}
-      </body>
+      <body className={kollektif.className}>{children}</body>
     </html>
   );
 }

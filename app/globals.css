@@ -5,31 +5,27 @@
 @layer base {
   :root {
     --text-black: #140f00;
-    --text-white: #FFFAEB;
+    --text-white: #fffaeb;
     --background: #fffaeb;
     --primary: #e86a26;
     --secondary: #fff5d6;
     --accent: #cf4307;
-    --discord: #7289DA;
-    --discord-accent: #4682B4;
+    --discord: #7289da;
+    --discord-accent: #4682b4;
   }
   .dark {
-    --text: #FFFAEB;
+    --text: #fffaeb;
     --background: #140f00;
     --primary: #f86c30;
     --secondary: #291f00;
     --accent: #d95b17;
-    --discord: #7289DA;
-    --discord-accent: #4682B4;
+    --discord: #7289da;
+    --discord-accent: #4682b4;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
-};
+}

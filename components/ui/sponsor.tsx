@@ -1,5 +1,5 @@
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 interface Props {
   name: string;
@@ -8,12 +8,7 @@ interface Props {
   href: string;
 }
 
-export const Sponsor: React.FC<Props> = ({
-  name,
-  img,
-  alt,
-  href,
-}): JSX.Element => {
+export const Sponsor: React.FC<Props> = ({ name, img, alt, href }): JSX.Element => {
   return (
     <div>
       <Link href={href} target="_blank">

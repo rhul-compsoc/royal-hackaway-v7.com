@@ -1,10 +1,8 @@
-import internal from "stream";
-
 interface Props {
-    text: string;
-    href: string;
-    target?: string;
-};
+  text: string;
+  href: string;
+  target?: string;
+}
 
 export const Blink: React.FC<Props> = ({ text, href, target }): JSX.Element => {
   return (

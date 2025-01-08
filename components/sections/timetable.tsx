@@ -1,10 +1,10 @@
-import { Schedule } from "./schedule";
-import { H2, H6 } from "../ui/title";
+import { Schedule } from './schedule';
+import { H2, H6 } from '../ui/title';
 
 export const Timetable = (): JSX.Element => {
   const dayOneEvents = [
     {
-      time: "8:30",
+      time: '8:30',
       title: <>Registration</>,
       description: (
         <>
@@ -15,72 +15,64 @@ export const Timetable = (): JSX.Element => {
       ),
     },
     {
-      time: "9:30",
+      time: '9:30',
       title: <>Opening Ceremony</>,
     },
     {
-      time: "10:00",
+      time: '10:00',
       title: <>💻 Hacking starts 💻</>,
     },
     {
       title: <>Team Building</>,
     },
     {
-      time: "12:00",
+      time: '12:00',
       title: (
         <>
-          Sociable Code Workshop with{" "}
-          <a
-            style={{ color: "blue" }}
-            target="_blank"
-            href="https://www.hackathons.org.uk/"
-          >
+          Sociable Code Workshop with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://www.hackathons.org.uk/">
             HackathonsUK
           </a>
         </>
       ),
     },
     {
-      time: "13:00",
+      time: '13:00',
       title: (
         <>
-          GitHub Copilot Workshop with{" "}
-          <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
+          GitHub Copilot Workshop with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://mlh.io">
             MLH
           </a>
         </>
       ),
     },
     {
-      time: "14:00",
+      time: '14:00',
       title: <>Lunch</>,
     },
     {
-      time: "15:00",
+      time: '15:00',
       title: (
         <>
-          Embedded Programming Workshop with{" "}
-          <a
-            href="https://linktr.ee/makerssoc"
-            target="_blank"
-            style={{ color: "blue" }}
-          >
+          Embedded Programming Workshop with{' '}
+          <a href="https://linktr.ee/makerssoc" target="_blank" style={{ color: 'blue' }}>
             RHUL Makers&apos; Society
           </a>
         </>
       ),
-      description: "Learn how to program microcontrollers with Arduino!",
+      description: 'Learn how to program microcontrollers with Arduino!',
     },
     {
-      time: "16:00",
+      time: '16:00',
       title: <>Symbolic AI: Declarative Programming with PDDL</>,
     },
     {
-      time: "17:00",
+      time: '17:00',
       title: (
         <>
           Wikipedia Races (
-          <a style={{ color: "blue" }} target="_blank" href="https://mlh.io">
+          <a style={{ color: 'blue' }} target="_blank" href="https://mlh.io">
             MLH
           </a>
           )
@@ -88,15 +80,11 @@ export const Timetable = (): JSX.Element => {
       ),
     },
     {
-      time: "18:00",
+      time: '18:00',
       title: (
         <>
           Cup Stacking (
-          <a
-            href="https://www.hackathons.org.uk/"
-            target="_blank"
-            style={{ color: "blue" }}
-          >
+          <a href="https://www.hackathons.org.uk/" target="_blank" style={{ color: 'blue' }}>
             HackathonsUK
           </a>
           )
@@ -104,83 +92,78 @@ export const Timetable = (): JSX.Element => {
       ),
     },
     {
-      time: "19:00",
+      time: '19:00',
       title: <>Dinner (Pizza) 🍕</>,
     },
     {
-      time: "20:00",
-      title: "Taskmaster (ft. Prof. Dave Cohen)",
+      time: '20:00',
+      title: 'Taskmaster (ft. Prof. Dave Cohen)',
       description: (
         <>
-          Taskmaster Compete in teams to perform a series of bizzare tasks. (As
-          seen on TV!)
+          Taskmaster Compete in teams to perform a series of bizzare tasks. (As seen on TV!)
           <br />
-          This year we&apos;re featuring the legendary Dave Cohen as our
-          Taskmaster!
+          This year we&apos;re featuring the legendary Dave Cohen as our Taskmaster!
         </>
       ),
     },
-    { time: "21:00", title: "Pub Quiz 🍺" },
+    { time: '21:00', title: 'Pub Quiz 🍺' },
     {
-      time: "22:00",
-      title: "Carrot in a Box 🥕📦❓",
+      time: '22:00',
+      title: 'Carrot in a Box 🥕📦❓',
       description:
-        "A game of wits and bluffing to see if you can trick the other person into getting the carrot within your box.",
+        'A game of wits and bluffing to see if you can trick the other person into getting the carrot within your box.',
     },
   ];
 
   const dayTwoEvents = [
     {
-      time: "0:00",
-      title: "PowerPoint™ Karaoke",
+      time: '0:00',
+      title: 'PowerPoint™ Karaoke',
       description: (
         <>
-          Deliver improvised Microsoft™ PowerPoint™ presentations with slides
-          you&apos;ve never seen before!
+          Deliver improvised Microsoft™ PowerPoint™ presentations with slides you&apos;ve never
+          seen before!
         </>
       ),
     },
-    { time: "5:00", title: "Delirious Debugging" },
-    { time: "8:00", title: "Breakfast" },
+    { time: '5:00', title: 'Delirious Debugging' },
+    { time: '8:00', title: 'Breakfast' },
     {
-      time: "10:00",
+      time: '10:00',
       title: (
         <span title="compsoc table tennis social when">
           🏓 Last Minute Table Tennis 🏓
-          <span style={{ color: "white" }}>hi royce</span>
+          <span style={{ color: 'white' }}>hi royce</span>
         </span>
       ),
-      description: "Relax and decompress with some table tennis!",
+      description: 'Relax and decompress with some table tennis!',
     },
-    { time: "12:30", title: "🛑 Hacking ends 🛑" },
+    { time: '12:30', title: '🛑 Hacking ends 🛑' },
     {
-      title: "Start presentations",
+      title: 'Start presentations',
       description:
-        "Spend the hour uploading your work onto DevPost and setting up your desk for people to see/judge your work at the Project Fair.",
+        'Spend the hour uploading your work onto DevPost and setting up your desk for people to see/judge your work at the Project Fair.',
     },
-    { time: "13:00", title: "Lunch" },
+    { time: '13:00', title: 'Lunch' },
     {
-      time: "14:00",
-      title: "🎪 Project Fair 🎪",
+      time: '14:00',
+      title: '🎪 Project Fair 🎪',
       description: (
         <>
-          Show off your project in a &quot;Science Fair&quot;-esque like display
-          to all the judges and volunteers that come around!
+          Show off your project in a &quot;Science Fair&quot;-esque like display to all the judges
+          and volunteers that come around!
         </>
       ),
     },
     {
-      time: "15:30",
-      title: "🧹 Cleanup Time 🗑️",
+      time: '15:30',
+      title: '🧹 Cleanup Time 🗑️',
       description: (
-        <>
-          Clean up, tidy up, pack up - We&apos;re about to decide who wins Royal
-          Hackaway!
-        </>
+        <>Clean up, tidy up, pack up - We&apos;re about to decide who wins Royal Hackaway!</>
       ),
     },
-    { time: "16:00", title: "Closing Ceremony" },
-    { title: "🏆 Winners announced 🏆" },
+    { time: '16:00', title: 'Closing Ceremony' },
+    { title: '🏆 Winners announced 🏆' },
     {
       time: (
         <>
@@ -189,7 +172,7 @@ export const Timetable = (): JSX.Element => {
           (approx)
         </>
       ),
-      title: "End of Hackathon",
+      title: 'End of Hackathon',
     },
   ];
 
