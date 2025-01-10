@@ -13,18 +13,18 @@ export const Information = (): JSX.Element => {
       <H2 text="Thanks for another great year of Royal Hackaway!" />
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
-        {} Saturday 27th - Sunday 28th of January 2024
+        { } Saturday 8th - Sunday 9th of February 2025
       </p>
 
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faMap} />
-        {} Windsor Building, Royal Holloway, University of London
+        { } Windsor Building, Royal Holloway, University of London
       </p>
 
       <div className="mt-4 mb-4">
         <BigBlink
-          text="Check out the Projects!"
-          href="https://royal-hackaway-v7.devpost.com"
+          text="Register interest!"
+          href="https://forms.gle/7xXoo1Zm9KzjPchUA"
           target="_blank"
         />
       </div>

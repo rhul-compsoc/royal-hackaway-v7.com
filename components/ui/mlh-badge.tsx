@@ -1,3 +1,4 @@
+// This is the 2024 version, please update to 2025 version!
 export const MLHBadge = (): JSX.Element => {
   return (
     <a
