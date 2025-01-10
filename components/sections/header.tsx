@@ -1,9 +1,11 @@
-import { PostStats } from '@/components/sections/post-stats';
+'use client';
+
 import logo from '@/public/v8-logo.png';
 import background from '@/public/background.png';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { CountdownTimer } from './countdown';
 
 export const Header = () => {
   return (
@@ -30,7 +32,7 @@ export const Header = () => {
         </div>
         <div className="w-full blur-none mt-5 sm:mt-10 mb-20 lg:mb-10">
           <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-3xl">
-            <PostStats />
+            <CountdownTimer date={new Date(2025, 1, 8, 10)} />
           </div>
         </div>
         <div className="h-full w-full mt-5 sm:mt-10 lg:mt-32 block md:hidden lg:block text-sm lg:text-3xl">

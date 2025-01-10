@@ -11,7 +11,7 @@ export const Timetable = (): JSX.Element => {
       <div className="overflow-x-auto rounded-lg border-gray-200 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto place-content-center">
         {/* Place Schedule components in here! */}
       </div>
-      <H4 text='Cooking up events!' />
+      <H4 text="Cooking up events!" />
     </div>
   );
 };

@@ -7,7 +7,7 @@ import { FAQ } from '@/components/sections/faq';
 import { Information } from '@/components/sections/information';
 import { Timetable } from '@/components/sections/timetable';
 import { Divider } from '@/components/ui/divider';
-import { Header } from '@/components/ui/header';
+import { Header } from '@/components/sections/header';
 
 export default function Home() {
   return (

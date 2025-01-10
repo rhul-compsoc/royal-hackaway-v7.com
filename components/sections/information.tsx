@@ -13,12 +13,12 @@ export const Information = (): JSX.Element => {
       <H2 text="Thanks for another great year of Royal Hackaway!" />
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
-        { } Saturday 8th - Sunday 9th of February 2025
+        {} Saturday 8th - Sunday 9th of February 2025
       </p>
 
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faMap} />
-        { } Windsor Building, Royal Holloway, University of London
+        {} Windsor Building, Royal Holloway, University of London
       </p>
 
       <div className="mt-4 mb-4">
