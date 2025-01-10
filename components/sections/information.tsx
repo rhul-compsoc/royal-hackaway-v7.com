@@ -10,7 +10,7 @@ import Link from 'next/link';
 export const Information = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center pt-24 px-12" id="info">
-      <H2 text="Thanks for another great year of Royal Hackaway!" />
+      <H2 text="Looking forward to seeing you!" />
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
         {} Saturday 8th - Sunday 9th of February 2025
