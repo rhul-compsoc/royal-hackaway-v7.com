@@ -1,6 +1,6 @@
 import { PostStats } from '@/components/sections/post-stats';
-import logo from '@/public/full-logo.png';
-import background from '@/public/hackaway.png';
+import logo from '@/public/v8-logo.png';
+import background from '@/public/background.png';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';

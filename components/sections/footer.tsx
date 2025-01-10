@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faXTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
-import logo from '@/public/full-logo.png';
+import logo from '@/public/v8-logo.png';
 import compsoc_logo from '@/public/compsoc_logo.png';
 
 export const Footer = (): JSX.Element => {
