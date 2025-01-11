@@ -8,8 +8,8 @@ const kollektif = localFont({ src: './fonts/Kollektif.ttf' });
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: 'Royal Hackaway v7',
-  description: 'Official website of Royal Hackaway v7',
+  title: 'Royal Hackaway v8',
+  description: 'Official website of Royal Hackaway v8',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
