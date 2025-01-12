@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface Event {
   time?: ReactNode;
@@ -17,10 +17,7 @@ export const Schedule: React.FC<Props> = ({ day, events }): JSX.Element => {
       <table className="w-full divide-y-2 divide-gray-200 bg-white text-sm">
         <thead className="ltr:text-left rtl:text-right font-bold">
           <tr>
-            <th
-              colSpan={2}
-              className="whitespace-nowrap px-4 py-2 text-gray-900"
-            >
+            <th colSpan={2} className="whitespace-nowrap px-4 py-2 text-gray-900">
               <strong>
                 <u>{day}</u>
               </strong>

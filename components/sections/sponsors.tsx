@@ -1,17 +1,17 @@
-import { BigBlink, Blink } from "../ui/blink";
-import { Sponsor } from "../ui/sponsor";
-import { H2, H3, H4 } from "../ui/title";
-import redbull_logo from "@/public/redbull_logo.svg";
-import github_logo from "@/public/github_logo.svg";
-import bcs_logo from "@/public/bcs_logo.svg";
-import rhsu_logo from "@/public/rhsu_logo_black.webp";
-import rhul_logo from "@/public/royalholloway.webp";
-import rhul_cs_logo from "@/public/cs_department_logo.gif";
-import hackathons_uk_logo from "@/public/hacakthons_uk_logo.svg";
-import mlh_logo from "@/public/mlh_logo.svg";
-import ce_logo from "@/public/ce_logo.jpg";
-import isg_logo from "@/public/isg_logo.webp";
-import makers_logo from "@/public/makers_logo.png";
+import { BigBlink, Blink } from '../ui/blink';
+import { Sponsor } from '../ui/sponsor';
+import { H2, H3, H4 } from '../ui/title';
+import redbull_logo from '@/public/redbull_logo.svg';
+import github_logo from '@/public/github_logo.svg';
+import bcs_logo from '@/public/bcs_logo.svg';
+import rhsu_logo from '@/public/rhsu_logo_black.webp';
+import rhul_logo from '@/public/royalholloway.webp';
+import rhul_cs_logo from '@/public/cs_department_logo.gif';
+import hackathons_uk_logo from '@/public/hacakthons_uk_logo.svg';
+import mlh_logo from '@/public/mlh_logo.svg';
+import ce_logo from '@/public/ce_logo.jpg';
+import isg_logo from '@/public/isg_logo.webp';
+import makers_logo from '@/public/makers_logo.png';
 
 export const Sponsors = (): JSX.Element => {
   return (
@@ -20,8 +20,8 @@ export const Sponsors = (): JSX.Element => {
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
           <BigBlink
-            text="Want to sponsor us next year?"
-            href="https://royalhackawayv7.tiiny.site/"
+            text="Want to sponsor us?"
+            href="mailto:computing@royalholloway.su"
             target="_blank"
           />
         </div>
@@ -35,9 +35,8 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
           <div
-            className={`grid ${
-              true ? "justify-center" : "grid-cols-1 lg:grid-cols-3"
-            } gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
+              } gap-4 lg:gap-8 mx-auto place-content-center`}
           >
             <Sponsor
               name="CS Department"
@@ -58,12 +57,7 @@ export const Sponsors = (): JSX.Element => {
           <div
             className={`grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8 mx-auto place-content-center`}
           >
-            <Sponsor
-              name="BCS"
-              img={bcs_logo}
-              alt="BCS Logo"
-              href="https://www.bcs.org/"
-            />
+            <Sponsor name="BCS" img={bcs_logo} alt="BCS Logo" href="https://www.bcs.org/" />
 
             <Sponsor
               name="ISG Department"
@@ -91,19 +85,6 @@ export const Sponsors = (): JSX.Element => {
                 href="https://github.com/"
               />
             </div>
-            <Sponsor
-              name="CrickleWood Electronics"
-              img={ce_logo}
-              alt="CrickleWood Electronics Logo"
-              href="https://www.cricklewoodelectronics.com/"
-            />
-
-            <Sponsor
-              name="Royal Holloway Makers' Society"
-              img={makers_logo}
-              alt="Royal Holloway Makers' Society Logo"
-              href="https://linktr.ee/makerssoc"
-            />
           </div>
         </div>
 
@@ -130,12 +111,7 @@ export const Sponsors = (): JSX.Element => {
               alt="Hackathons UK Logo"
               href="https://www.hackathons.org.uk/"
             />
-            <Sponsor
-              name="MLH"
-              img={mlh_logo}
-              alt="MLH Logo"
-              href="https://mlh.io/"
-            />
+            <Sponsor name="MLH" img={mlh_logo} alt="MLH Logo" href="https://mlh.io/" />
           </div>
         </div>
       </div>
