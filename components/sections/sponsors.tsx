@@ -21,7 +21,7 @@ export const Sponsors = (): JSX.Element => {
         <div className="mx-auto w-fit mb-16 mt-8">
           <BigBlink
             text="Want to sponsor us?"
-            href="computing@royalholloway.su"
+            href="mailto:computing@royalholloway.su"
             target="_blank"
           />
         </div>
