@@ -15,7 +15,7 @@ function getDays(date: number): number {
 }
 
 function getHours(date: number): number {
-  return Math.floor((date - (getDays(date) * 1000 * 3600 * 24)) / (1000 * 3600));
+  return Math.floor((date - getDays(date) * 1000 * 3600 * 24) / (1000 * 3600));
 }
 
 function getMinutes(date: number): number {
@@ -54,22 +54,30 @@ export const CountdownTimer: React.FC<Props> = ({ date }): JSX.Element => {
   return (
     <div className="w-full lg:grid lg:grid-cols-4 px-5 lg:px-0">
       <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{days}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {days}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> days</p>
       </div>
 
       <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{hours}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {hours}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> hours</p>
       </div>
 
       <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{minutes}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {minutes}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> minutes</p>
       </div>
 
       <div className="text-center">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">{seconds}</p>
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-white font-bold">
+          {seconds}
+        </p>
         <p className="text-xl sm:text-2xl md:text-4xl text-white"> seconds</p>
       </div>
     </div>

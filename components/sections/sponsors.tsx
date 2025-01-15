@@ -35,8 +35,9 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
           <div
-            className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
-              } gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid ${
+              true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
+            } gap-4 lg:gap-8 mx-auto place-content-center`}
           >
             <Sponsor
               name="CS Department"
