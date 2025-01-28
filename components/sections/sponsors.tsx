@@ -12,6 +12,7 @@ import mlh_logo from '@/public/mlh_logo.svg';
 import ce_logo from '@/public/ce_logo.jpg';
 import isg_logo from '@/public/isg_logo.webp';
 import makers_logo from '@/public/makers_logo.png';
+import verdn from '@/public/verdn.jpg';
 
 export const Sponsors = (): JSX.Element => {
   return (
@@ -35,9 +36,8 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
           <div
-            className={`grid ${
-              true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
-            } gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
+              } gap-4 lg:gap-8 mx-auto place-content-center`}
           >
             <Sponsor
               name="CS Department"
@@ -50,7 +50,12 @@ export const Sponsors = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Silver"></H3>
-          <H4 text="Nothing yet, could you be the first?"></H4>
+          <Sponsor
+              name="Verdn"
+              img={verdn}
+              alt="Verdn Logo"
+              href="https://verdn.com/"
+            />
         </div>
 
         <div className="flex flex-col items-center text-center">
@@ -65,7 +70,7 @@ export const Sponsors = (): JSX.Element => {
               img={isg_logo}
               alt="RHUL ISG Department Logo"
               href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/information-security/"
-            />
+            />            
           </div>
         </div>
 
