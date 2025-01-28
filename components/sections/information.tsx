@@ -22,11 +22,7 @@ export const Information = (): JSX.Element => {
       </p>
 
       <div className="mt-4 mb-4">
-        <BigBlink
-          text="Get Tickets!"
-          href="https://forms.gle/YxL3RfYLfMbdYmgN6"
-          target="_blank"
-        />
+        <BigBlink text="Get Tickets!" href="https://forms.gle/YxL3RfYLfMbdYmgN6" target="_blank" />
       </div>
 
       <div className="mt-4 mb-4">

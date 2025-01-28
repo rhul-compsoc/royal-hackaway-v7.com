@@ -36,8 +36,9 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
           <div
-            className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
-              } gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid ${
+              true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
+            } gap-4 lg:gap-8 mx-auto place-content-center`}
           >
             <Sponsor
               name="CS Department"
@@ -50,12 +51,7 @@ export const Sponsors = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Silver"></H3>
-          <Sponsor
-              name="Verdn"
-              img={verdn}
-              alt="Verdn Logo"
-              href="https://verdn.com/"
-            />
+          <Sponsor name="Verdn" img={verdn} alt="Verdn Logo" href="https://verdn.com/" />
         </div>
 
         <div className="flex flex-col items-center text-center">
@@ -70,7 +66,7 @@ export const Sponsors = (): JSX.Element => {
               img={isg_logo}
               alt="RHUL ISG Department Logo"
               href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/information-security/"
-            />            
+            />
           </div>
         </div>
 
