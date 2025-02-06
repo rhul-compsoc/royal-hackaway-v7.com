@@ -1,18 +1,16 @@
-import { BigBlink, Blink } from '../ui/blink';
+import { BigBlink } from '../ui/blink';
 import { Sponsor } from '../ui/sponsor';
 import { H2, H3, H4 } from '../ui/title';
 import redbull_logo from '@/public/redbull_logo.svg';
 import github_logo from '@/public/github_logo.svg';
-import bcs_logo from '@/public/bcs_logo.svg';
 import rhsu_logo from '@/public/rhsu_logo_black.webp';
 import rhul_logo from '@/public/royalholloway.webp';
 import rhul_cs_logo from '@/public/cs_department_logo.gif';
 import hackathons_uk_logo from '@/public/hacakthons_uk_logo.svg';
 import mlh_logo from '@/public/mlh_logo.svg';
-import ce_logo from '@/public/ce_logo.jpg';
-import isg_logo from '@/public/isg_logo.webp';
-import makers_logo from '@/public/makers_logo.png';
 import verdn from '@/public/verdn.jpg';
+import pilk from '@/public/pilk_logo.png';
+import sf from '@/public/sf-colour.svg';
 
 export const Sponsors = (): JSX.Element => {
   return (
@@ -36,9 +34,8 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
           <div
-            className={`grid ${
-              true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
-            } gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
+              } gap-4 lg:gap-8 mx-auto place-content-center`}
           >
             <Sponsor
               name="CS Department"
@@ -51,21 +48,25 @@ export const Sponsors = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Silver"></H3>
-          <Sponsor name="Verdn" img={verdn} alt="Verdn Logo" href="https://verdn.com/" />
+          <div
+            className={`grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8 mx-auto place-content-center`}
+          >
+            <Sponsor name="Verdn" img={verdn} alt="Verdn Logo" href="https://verdn.com/" />
+            <Sponsor name="Pilk" img={pilk} alt='Pilk Logo' href="https://pilk.uk/" />
+          </div>
         </div>
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Bronze"></H3>
           <div
-            className={`grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 mx-auto place-content-center`}
           >
-            <Sponsor name="BCS" img={bcs_logo} alt="BCS Logo" href="https://www.bcs.org/" />
-
             <Sponsor
-              name="ISG Department"
-              img={isg_logo}
-              alt="RHUL ISG Department Logo"
-              href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/information-security/"
+              name="StoryFutures"
+              img={sf}
+              alt="Story Futures Logo"
+              href="https://www.storyfutures.com/"
+              className='bg-black p-4 scale-[50%]'
             />
           </div>
         </div>
