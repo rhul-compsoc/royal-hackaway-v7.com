@@ -153,17 +153,6 @@ export const Timetable = (): JSX.Element => {
       </>,
     },
     { time: '8:00', title: 'Breakfast' },
-    {
-      time: '11:00',
-      title: (
-        <>
-          Geogeuessr with{' '}
-          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-            Pilksoft
-          </a>
-        </>
-      ),
-    },
     { time: '12:30', title: '🛑 Hacking ends 🛑' },
     {
       title: 'Start presentations',
