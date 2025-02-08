@@ -29,9 +29,9 @@ export const Timetable = (): JSX.Element => {
       time: '12:00',
       title: (
         <>
-          How to win a Hackathon with{' '}
-          <a style={{ color: 'blue' }} target="_blank" href="https://verdn.com/">
-            Verdn
+          GitHub Copilot Workshop with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://mlh.io">
+            MLH
           </a>
         </>
       ),
@@ -55,9 +55,9 @@ export const Timetable = (): JSX.Element => {
       time: '15:00',
       title: (
         <>
-          GitHub Copilot Workshop with{' '}
-          <a style={{ color: 'blue' }} target="_blank" href="https://mlh.io">
-            MLH
+          How to win a Hackathon with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://verdn.com/">
+            Verdn
           </a>
         </>
       ),
