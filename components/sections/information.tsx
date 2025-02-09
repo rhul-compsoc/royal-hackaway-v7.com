@@ -13,7 +13,7 @@ export const Information = (): JSX.Element => {
       <H2 text="Looking forward to seeing you!" />
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
-        {} Saturday 8th - Sunday 9th of February 2025
+        {} <strong>[Tentative date*]</strong> Saturday 7th - Sunday 8th of February 2026
       </p>
 
       <p className="text-center px-4">
