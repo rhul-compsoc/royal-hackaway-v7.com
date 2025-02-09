@@ -153,6 +153,15 @@ export const Timetable = (): JSX.Element => {
       </>,
     },
     { time: '8:00', title: 'Breakfast' },
+    {
+      time: '11:00',
+      title: <>
+        Deadline for submissions on{' '}
+        <a style={{ color: 'blue' }} target="_blank" href="https://royalhackaway-v8.devpost.com/">
+          Devpost
+        </a>
+      </>,
+    },
     { time: '12:30', title: '🛑 Hacking ends 🛑' },
     {
       title: 'Start presentations',
