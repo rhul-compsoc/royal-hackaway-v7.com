@@ -4,13 +4,13 @@ import { faCalendar, faMap } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { Map } from '../ui/map';
-import { BigBlink, DiscordBlink } from '../ui/blink';
+import { BigBlink, BigDiscordBlink } from '../ui/blink';
 import Link from 'next/link';
 
 export const Information = (): JSX.Element => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center pt-24 px-12" id="info">
-      <H2 text="Looking forward to seeing you!" />
+      <H2 text="Thanks for coming, see you next year!" />
       <p className="text-center px-4">
         <FontAwesomeIcon icon={faCalendar} />
         {} Saturday 8th - Sunday 9th of February 2025
@@ -22,11 +22,15 @@ export const Information = (): JSX.Element => {
       </p>
 
       <div className="mt-4 mb-4">
-        <BigBlink text="Get Tickets!" href="https://forms.gle/YxL3RfYLfMbdYmgN6" target="_blank" />
+        <BigBlink
+          text="Check out the projects on Devpost!"
+          href="https://royalhackaway-v8.devpost.com/project-gallery"
+          target="_blank"
+        />
       </div>
 
       <div className="mt-4 mb-4">
-        <DiscordBlink
+        <BigDiscordBlink
           text="Join our Discord!"
           href="https://discord.gg/XptvsDZwXc"
           target="_blank"
